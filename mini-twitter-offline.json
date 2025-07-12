@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "multer": "^2.0.1",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "uuid": "^11.1.0"
+  }
+}

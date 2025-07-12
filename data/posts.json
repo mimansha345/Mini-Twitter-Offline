@@ -1,0 +1,3112 @@
+[
+  {
+    "id": "dfc9d143-de3e-49d0-b981-90cebf3618db",
+    "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "text": "🏀 Game day energy!",
+    "genres": [
+      "Sports",
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752145959464.jpg",
+    "timestamp": "2025-07-08T19:10:00.000Z",
+    "comments": [
+      {
+        "id": "905af53c-3077-414a-a957-0a7b69edcef0",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Good Luck!",
+        "timestamp": "2025-07-12T12:19:31.887Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "90a86c99-b968-4c14-b18f-5bc283ea0106",
+    "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "text": "🏋️ Morning workout done",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146114908.jpg",
+    "timestamp": "2025-06-29T08:50:00.000Z",
+    "comments": [],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "dbd06620-4bcb-4058-8e61-9a9a7cf5287b",
+    "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "text": "Ready for the finals?",
+    "genres": [
+      "Sports",
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752146268299.jpg",
+    "timestamp": "2025-06-28T12:10:00.000Z",
+    "comments": [
+      {
+        "id": "280e9cf5-1e96-43e5-85f0-165d379e2bce",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Go for it!",
+        "timestamp": "2025-07-12T12:14:52.930Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "8bf708d0-bb1f-4b24-8103-462d46b0ca27",
+    "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "text": "Victory tastes sweet!",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146450488.avif",
+    "timestamp": "2025-07-09T09:30:00.000Z",
+    "comments": [
+      {
+        "id": "afe8f631-651d-46e3-8c09-9f1c3d1ad909",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Congratulations!",
+        "timestamp": "2025-07-12T12:15:18.328Z"
+      },
+      {
+        "id": "9789f9d6-2e08-4318-bfda-d1e80e77a10b",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Nice win!",
+        "timestamp": "2025-07-12T12:20:10.133Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "7ece5ffb-fe12-4aab-a3b0-a666059fabbe",
+    "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "text": "😴 Rest days are underrated.",
+    "genres": [
+      "Sports"
+    ],
+    "image": null,
+    "timestamp": "2025-06-30T13:30:00.000Z",
+    "comments": [],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "2075d9f8-3934-4cf9-afc1-9fb0489709b6",
+    "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "text": "Stretch before you sprint!",
+    "genres": [
+      "Sports",
+      "Education"
+    ],
+    "image": "/image-uploads/1752146621533.avif",
+    "timestamp": "2025-07-05T11:10:00.000Z",
+    "comments": [
+      {
+        "id": "8e59ab5f-2eb5-4ba2-97ee-2c8a4c4f6792",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Great tip!",
+        "timestamp": "2025-07-12T12:07:47.759Z"
+      },
+      {
+        "id": "527e8441-837e-4751-b039-81e62ed46ee7",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Great tip",
+        "timestamp": "2025-07-12T12:50:48.306Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "1da2f450-2342-48a7-b02f-6aa2edc3536d",
+    "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "text": "Speed training drills",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146708969.jpg",
+    "timestamp": "2025-07-03T09:15:00.000Z",
+    "comments": [
+      {
+        "id": "0829ecc1-02ff-43ec-8a48-b035504f7131",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Nice workout tips!",
+        "timestamp": "2025-07-12T12:51:11.528Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "a924e3cb-7c09-49ea-9e48-94acd1ce2849",
+    "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "text": "Pre-match rituals matter.",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146747433.jpg",
+    "timestamp": "2025-07-03T19:40:00.000Z",
+    "comments": [
+      {
+        "id": "25c34ed1-90c8-4bc7-aedc-5175fe2a57a7",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Absolutely!",
+        "timestamp": "2025-07-12T12:08:35.525Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "c88df908-71ae-4f50-9e92-6e960ef7890c",
+    "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "text": "Hydration is key.",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146819648.avif",
+    "timestamp": "2025-07-02T07:45:00.000Z",
+    "comments": [
+      {
+        "id": "d5ef62d4-4912-43c0-8f9e-264d8e594e04",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Absolutely!",
+        "timestamp": "2025-07-12T12:21:11.252Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "90d86141-9e89-4ae1-bc9c-01c6c5e97ffb",
+    "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "text": "Tips for improving stamina?",
+    "genres": [
+      "Sports",
+      "Education"
+    ],
+    "image": null,
+    "timestamp": "2025-06-27T18:55:00.000Z",
+    "comments": [
+      {
+        "id": "f48cfdac-7dfd-42d7-a6ec-a0f48f6bd193",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Consistency is key!",
+        "timestamp": "2025-07-12T12:09:17.559Z"
+      },
+      {
+        "id": "fdcedf3f-3fde-4474-b797-7703c29afd72",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Consistency is key!",
+        "timestamp": "2025-07-12T12:21:28.687Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "116c6ba0-2971-4a45-b1e3-57c98b459f60",
+    "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "text": "🏏 Cricket fans where you at?",
+    "genres": [
+      "Sports",
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752146961367.avif",
+    "timestamp": "2025-07-08T08:25:00.000Z",
+    "comments": [
+      {
+        "id": "290c75be-633b-4931-929c-cf3722741540",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Cricket is awesome!",
+        "timestamp": "2025-07-12T12:09:49.827Z"
+      },
+      {
+        "id": "5dfea25e-2baa-4482-8438-360d88d6ca6e",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "Iam here",
+        "timestamp": "2025-07-12T13:45:29.825Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "eafeaccb-18ba-4455-a106-cdd8d50f08f2",
+    "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "text": "Post-match snack ideas?",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752146989018.jpg",
+    "timestamp": "2025-07-04T14:50:00.000Z",
+    "comments": [
+      {
+        "id": "9baf7192-f82c-4da1-b875-bd1a482144ef",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Fruit smoothie!",
+        "timestamp": "2025-07-12T12:10:21.474Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "b9d404ad-a3ad-4747-9ed8-b08a404c00cd",
+    "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "text": "Shoutout to my teammates",
+    "genres": [
+      "Sports",
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752147031051.jpg",
+    "timestamp": "2025-07-01T16:05:00.000Z",
+    "comments": [
+      {
+        "id": "2cdea1ec-86a2-4009-af2f-0a6366f46c0f",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Go team!",
+        "timestamp": "2025-07-12T12:16:19.775Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "e3b79fc2-abb3-4ee8-a867-2280eae0e489",
+    "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "text": "⚽ Weekend game with the squad",
+    "genres": [
+      "Sports"
+    ],
+    "image": "/image-uploads/1752147058171.jpg",
+    "timestamp": "2025-07-06T17:20:00.000Z",
+    "comments": [
+      {
+        "id": "d859e343-f0c1-45da-9684-3d0d75c61787",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Have fun!",
+        "timestamp": "2025-07-12T12:16:41.877Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "9444ec48-23ed-4919-875b-85dabe26ed9f",
+    "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "text": "What’s your favorite sport to play?",
+    "genres": [
+      "Sports"
+    ],
+    "image": null,
+    "timestamp": "2025-07-02T20:25:00.000Z",
+    "comments": [
+      {
+        "id": "7832eec3-23d2-4039-9414-baad7effa1ca",
+        "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+        "username": "EduNerd",
+        "name": "EduNerd",
+        "text": "Basketball!)",
+        "timestamp": "2025-07-12T13:25:01.180Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "0367c644-ee3f-4814-a737-696c2c89136f",
+    "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "text": "Just unboxed the new M2 MacBook. Beast mode! 💻",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147196074.jpg",
+    "timestamp": "2025-07-08T19:45:00.000Z",
+    "comments": [
+      {
+        "id": "2d469498-ce88-4095-ac80-9301c125f320",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Nice new MacBook!",
+        "timestamp": "2025-07-12T12:11:30.461Z"
+      },
+      {
+        "id": "a0046466-12b5-4d6c-b051-c05bdc33542c",
+        "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+        "username": "CodeCraft",
+        "name": "CodeCraft",
+        "text": "Nice MacBook! congrats!",
+        "timestamp": "2025-07-12T12:31:14.340Z"
+      },
+      {
+        "id": "026ecca1-3c35-4d2c-8c7e-52f58415625c",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "great!",
+        "timestamp": "2025-07-12T12:36:44.576Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "e85481db-60d1-4763-a3b2-bf85a64329ab",
+    "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "text": "Late night coding hits different.",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147228605.avif",
+    "timestamp": "2025-07-02T21:40:50.000Z",
+    "comments": [
+      {
+        "id": "469a3994-83eb-40a7-a05e-9f6a4dfcde9e",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "Relatable!",
+        "timestamp": "2025-07-12T13:34:34.387Z"
+      }
+    ],
+    "likes": [],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "4bd28822-c479-4ef9-b1a5-4ed9ac5edbfa",
+    "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "text": "Exploring the new iOS 18 beta features. 🔍📱",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147259557.jpg",
+    "timestamp": "2025-07-05T14:30:10.000Z",
+    "comments": [
+      {
+        "id": "471b130e-3217-4914-92f4-97a1faad92a7",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Sounds exciting!",
+        "timestamp": "2025-07-12T12:11:58.277Z"
+      },
+      {
+        "id": "df3af0b8-5d64-488d-bd06-eee18e34af68",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Exiciting!",
+        "timestamp": "2025-07-12T12:37:14.891Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "97be4f83-27fe-414b-bba0-6f87d12dd6a6",
+    "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "text": "Attended a local dev meetup. Inspiring talks!",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752147288038.jpeg",
+    "timestamp": "2025-07-04T11:12:00.000Z",
+    "comments": [
+      {
+        "id": "5e8cb4f3-d662-4155-8d42-989c156aa9b3",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Sounds great!",
+        "timestamp": "2025-07-12T12:12:47.411Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "f183c80c-65c8-48bf-b279-80a3358a665e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "f183c80c-65c8-48bf-b279-80a3358a665e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "score": 3,
+    "scoringFactors": {
+      "views": 3
+    }
+  },
+  {
+    "id": "834efc66-3a23-472c-96f0-be99d4e495ee",
+    "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "text": "React or Vue — what’s your weapon of choice?",
+    "genres": [
+      "Tech"
+    ],
+    "image": null,
+    "timestamp": "2025-06-27T09:10:45.000Z",
+    "comments": [
+      {
+        "id": "c450f0ad-59ee-43dd-a752-619a26fadf43",
+        "userId": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+        "username": "SportsFan",
+        "name": "SportsFan",
+        "text": "Vue is my pick!",
+        "timestamp": "2025-07-12T12:13:05.845Z"
+      },
+      {
+        "id": "d2ac4e1f-8513-485f-84f4-d1e0760058e7",
+        "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+        "username": "CodeCraft",
+        "name": "CodeCraft",
+        "text": "React",
+        "timestamp": "2025-07-12T12:32:02.741Z"
+      },
+      {
+        "id": "1a2b1774-e98a-4da2-b2f2-54537a947a3b",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Vue is cool!",
+        "timestamp": "2025-07-12T12:37:47.043Z"
+      },
+      {
+        "id": "749fa138-ef45-444a-8149-6573a6db3bb0",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "React!",
+        "timestamp": "2025-07-12T13:35:17.071Z"
+      }
+    ],
+    "likes": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "views": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "483210c2-ce2b-4aed-b64c-1c40431c9b6e",
+    "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "text": "Built a weather app with OpenWeatherMap API",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147396505.png",
+    "timestamp": "2025-07-03T16:05:35.000Z",
+    "comments": [
+      {
+        "id": "a8916597-dc4b-4846-9a2f-43a0fcb935c6",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Great job!",
+        "timestamp": "2025-07-12T12:23:28.089Z"
+      },
+      {
+        "id": "6fbab26a-f43b-41c7-a84b-1480939dafc2",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Nice App!",
+        "timestamp": "2025-07-12T12:38:09.428Z"
+      },
+      {
+        "id": "0c930b52-f9a0-49e8-9fd2-26f2b2b6b3a5",
+        "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+        "username": "LearnWithMe",
+        "name": "LearnWithMe",
+        "text": "Well done!",
+        "timestamp": "2025-07-12T13:16:25.598Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "f2a294a4-32eb-4de0-b661-c8eaac80aea2",
+    "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "text": "My dev setup — clean & minimal!",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147451873.jpg",
+    "timestamp": "2025-06-28T13:47:30.000Z",
+    "comments": [],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "e5812424-51c5-45d9-bb9e-8f6fb4bed0b8",
+    "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "text": "Just deployed a portfolio site. 💻🚀",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147482207.avif",
+    "timestamp": "2025-06-29T07:55:00.000Z",
+    "comments": [],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "d5a54b18-3f79-4861-8cc5-f1fed89c21df",
+    "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "text": "Docker made my workflow 10x better.",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147535438.jpg",
+    "timestamp": "2025-07-08T08:55:40.000Z",
+    "comments": [
+      {
+        "id": "5acc3ba0-7fc2-4429-9d25-ec501540e525",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Great job!",
+        "timestamp": "2025-07-12T12:24:16.222Z"
+      },
+      {
+        "id": "e94ddf8c-1cc6-4c88-beeb-88d372c84c5e",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Nice!",
+        "timestamp": "2025-07-12T12:39:03.531Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "11f3e3b5-796f-4b3c-be16-a8284b9bd4e9",
+    "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "text": "Best VS Code extensions for JavaScript devs?",
+    "genres": [
+      "Tech"
+    ],
+    "image": null,
+    "timestamp": "2025-06-30T18:22:10.000Z",
+    "comments": [
+      {
+        "id": "1579b407-b485-4a9f-a9f6-269dcd403a03",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Prettier and ESLint!",
+        "timestamp": "2025-07-12T12:24:41.824Z"
+      },
+      {
+        "id": "73770a92-3dcb-4c84-8aec-1f035e0d6619",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Prettier!",
+        "timestamp": "2025-07-12T12:39:31.095Z"
+      },
+      {
+        "id": "d19be56e-57c0-499d-abdc-96017a157361",
+        "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+        "username": "LearnWithMe",
+        "name": "LearnWithMe",
+        "text": "Prettier!",
+        "timestamp": "2025-07-12T13:18:42.115Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "a720355e-96a9-4891-b2f4-c630292bbd7e",
+    "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "text": "Trained a neural net on animal sounds 🐶🧠",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752147705526.webp",
+    "timestamp": "2025-06-24T15:05:25.000Z",
+    "comments": [],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "ac079501-ddfe-4cbc-8741-7bf3148d19b9",
+    "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "text": "GPT-5 is insane 😳🔥",
+    "genres": [
+      "Tech"
+    ],
+    "image": "/image-uploads/1752147725739.avif",
+    "timestamp": "2025-07-09T10:20:15.000Z",
+    "comments": [
+      {
+        "id": "616e519d-8d96-4eb6-8e87-1860a7daab7e",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Fascinating!",
+        "timestamp": "2025-07-12T12:25:25.320Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "a6a945ff-7fff-4f30-84ab-d991336ea55d",
+    "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "text": "Started a course on ML with Python. Loving it!",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752147750004.webp",
+    "timestamp": "2025-07-02T09:25:20.000Z",
+    "comments": [],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "16a4702e-bbeb-407d-96df-20e2dd9e6fc3",
+    "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "text": "AI-generated art is getting scarily good.",
+    "genres": [
+      "Tech",
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752147776274.avif",
+    "timestamp": "2025-06-26T17:35:55.000Z",
+    "comments": [
+      {
+        "id": "c759d92b-0dd2-4e30-b9ed-88740bac8a28",
+        "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+        "username": "CodeCraft",
+        "name": "CodeCraft",
+        "text": "Incredible",
+        "timestamp": "2025-07-12T12:33:28.125Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "89dd8ce7-a04a-40a8-91ca-c20c0bb16b89",
+    "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "text": "Where should I start learning reinforcement learning?",
+    "genres": [
+      "Tech"
+    ],
+    "image": null,
+    "timestamp": "2025-06-25T11:00:00.000Z",
+    "comments": [
+      {
+        "id": "6abe2d19-1109-40ff-8cb0-cbf77b09d225",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Try online tutorials!",
+        "timestamp": "2025-07-12T12:26:24.390Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "c4a2c47a-6f8f-4a15-9b37-7b063aada399",
+    "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "text": "Breaking: Parliament passes new education bill. 📜",
+    "genres": [
+      "News",
+      "Education"
+    ],
+    "image": "/image-uploads/1752147939857.jpg",
+    "timestamp": "2025-06-25T08:10:00.000Z",
+    "comments": [
+      {
+        "id": "e65d1239-fb89-41fa-8822-a00e4183c80d",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Interesting development!",
+        "timestamp": "2025-07-12T12:17:10.279Z"
+      },
+      {
+        "id": "692d3f26-f766-485b-9cd8-88486f5f5b2c",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Significant news!",
+        "timestamp": "2025-07-12T12:47:50.353Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "c0c18c24-4bb2-4732-adcc-ada8d848e8c7",
+    "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "text": "Monsoon floods hit coastal cities. Stay safe! 🌧️",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752147965022.jpg",
+    "timestamp": "2025-07-08T20:30:00.000Z",
+    "comments": [
+      {
+        "id": "0f789287-4a8c-44a5-89f7-6520e753c0a1",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Hope everyone is safe!",
+        "timestamp": "2025-07-12T12:48:18.591Z"
+      },
+      {
+        "id": "6965a63a-b77a-4432-aca8-a211f73fbea1",
+        "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+        "username": "DailyPulse",
+        "name": "DailyPulse",
+        "text": "Be safe out there!",
+        "timestamp": "2025-07-12T12:54:11.412Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "8cd2aa3a-a869-42d5-8b1e-314d951201aa",
+    "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "text": "Global markets tumble after Fed hike.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752147992493.webp",
+    "timestamp": "2025-07-04T08:20:00.000Z",
+    "comments": [
+      {
+        "id": "e586b888-528c-4c5a-8f06-fb878d399a2b",
+        "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+        "username": "DailyPulse",
+        "name": "DailyPulse",
+        "text": "Stay informed",
+        "timestamp": "2025-07-12T12:54:41.180Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "1fb258d3-0b42-4b8d-8e91-6518e8755654",
+    "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "text": "Highlights from today’s press conference.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148021712.jpg",
+    "timestamp": "2025-06-30T10:30:00.000Z",
+    "comments": [],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "c94be830-7956-417b-99da-bc6f15f66ea4",
+    "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "text": "Thoughts on the state of journalism in 2025?",
+    "genres": [
+      "News"
+    ],
+    "image": null,
+    "timestamp": "2025-06-27T16:00:00.000Z",
+    "comments": [
+      {
+        "id": "411d6118-4cf2-4bd0-a19a-3bb169fdf43c",
+        "userId": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+        "username": "Coach99",
+        "name": "Coach99",
+        "text": "Great question!",
+        "timestamp": "2025-07-12T12:18:07.935Z"
+      }
+    ],
+    "likes": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "views": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "1500b0e2-8c01-4b33-aed7-2574b9586bc6",
+    "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "text": "Top 5 headlines you need to know today 📰",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148091279.jpg",
+    "timestamp": "2025-07-05T15:50:00.000Z",
+    "comments": [
+      {
+        "id": "b5028bab-592c-45f0-b3b4-4099d12b3284",
+        "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+        "username": "NewsRadar",
+        "name": "NewsRadar",
+        "text": "Very informative!",
+        "timestamp": "2025-07-12T12:42:06.744Z"
+      }
+    ],
+    "likes": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "views": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "0d4799fc-fe06-4db7-8515-3e26ea7a9a27",
+    "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "text": "Cybersecurity summit kicks off in Berlin.",
+    "genres": [
+      "Tech",
+      "News"
+    ],
+    "image": "/image-uploads/1752148115493.jpg",
+    "timestamp": "2025-07-02T14:00:00.000Z",
+    "comments": [],
+    "likes": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "views": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "b3d3ddbd-e4d0-428f-b155-222dc8d63122",
+    "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "text": "Elections around the corner. Here’s what to watch.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148148728.jpg",
+    "timestamp": "2025-07-03T17:45:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "dd8b6be6-e221-4795-a777-30b927d49200",
+    "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "text": "Power outage in major metro areas.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148177094.jpg",
+    "timestamp": "2025-07-10T11:49:37.097Z",
+    "comments": [
+      {
+        "id": "6d35ca52-87a3-4b99-8cad-43271a8389d5",
+        "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+        "username": "DailyPulse",
+        "name": "DailyPulse",
+        "text": "Hope power is restored soon!",
+        "timestamp": "2025-07-12T12:56:06.278Z"
+      }
+    ],
+    "likes": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "views": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "dc978e12-8647-4e4c-8f45-a20675d243f6",
+    "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "text": "Do you trust the media in 2025? Why or why not?",
+    "genres": [
+      "News"
+    ],
+    "image": null,
+    "timestamp": "2025-07-01T18:25:00.000Z",
+    "comments": [
+      {
+        "id": "f7a042ce-01ee-4f58-a053-d172179b9c47",
+        "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+        "username": "NewsRadar",
+        "name": "NewsRadar",
+        "text": "Important question!",
+        "timestamp": "2025-07-12T12:43:23.234Z"
+      },
+      {
+        "id": "4c39664f-83dc-47f4-bcbf-f8da73746321",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "Good question!",
+        "timestamp": "2025-07-12T13:14:12.781Z"
+      }
+    ],
+    "likes": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "views": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "8c6311ed-1dda-413d-8835-ce76229834ef",
+    "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "text": "India’s space mission successfully deploys satellite! 🚀",
+    "genres": [
+      "Tech",
+      "News"
+    ],
+    "image": "/image-uploads/1752148275479.webp",
+    "timestamp": "2025-07-09T10:05:00.000Z",
+    "comments": [
+      {
+        "id": "1e35d56a-6f78-4619-9f2b-d2f503a0e0f2",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Amazing!",
+        "timestamp": "2025-07-12T12:26:56.005Z"
+      },
+      {
+        "id": "23f906fe-615b-4382-8bd2-fcf2a1b0a3e7",
+        "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+        "username": "NewsRadar",
+        "name": "NewsRadar",
+        "text": "Let's go India!",
+        "timestamp": "2025-07-12T12:43:48.080Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "bcc3324f-6128-4a8a-afa5-8abeee564b1c",
+    "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "text": "Record-breaking heatwaves across Europe.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148299946.avif",
+    "timestamp": "2025-07-06T12:10:00.000Z",
+    "comments": [
+      {
+        "id": "cc73fa47-3240-411b-9fc4-4cb795718bd7",
+        "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+        "username": "NewsRadar",
+        "name": "NewsRadar",
+        "text": "Stay Safe!",
+        "timestamp": "2025-07-12T12:42:42.098Z"
+      },
+      {
+        "id": "61e21eb2-b269-439b-8edf-87c4d4dc1d3f",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "Stay hydrated!",
+        "timestamp": "2025-07-12T13:13:39.730Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 4,
+    "scoringFactors": {
+      "views": 4
+    }
+  },
+  {
+    "id": "cf5b41e0-1cb6-44cc-a48f-a402225e31b8",
+    "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "text": "Protests erupt in city center over education cuts.",
+    "genres": [
+      "News",
+      "Education"
+    ],
+    "image": "/image-uploads/1752148323315.webp",
+    "timestamp": "2025-06-26T13:50:00.000Z",
+    "comments": [
+      {
+        "id": "ee1c4d9d-1621-41ae-b0ef-057cfb14c4d6",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Important issue!",
+        "timestamp": "2025-07-12T12:29:51.342Z"
+      },
+      {
+        "id": "e9b5d936-e744-4f3a-937c-c58b998158bd",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Important issue!",
+        "timestamp": "2025-07-12T12:49:54.865Z"
+      },
+      {
+        "id": "77159827-c957-4556-afef-f253d3cbc673",
+        "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+        "username": "MemeMachine",
+        "name": "MemeMachine",
+        "text": "Important topic!",
+        "timestamp": "2025-07-12T13:29:40.964Z"
+      },
+      {
+        "id": "93f578b2-4f7b-4815-a92d-1e3e83495126",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "importact impact!",
+        "timestamp": "2025-07-12T13:42:48.541Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "d6d79c1d-fc9f-454a-8e70-51819f52eed1",
+    "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "text": "Live from the budget session. Key updates below.",
+    "genres": [
+      "News"
+    ],
+    "image": "/image-uploads/1752148352745.webp",
+    "timestamp": "2025-06-28T20:55:00.000Z",
+    "comments": [
+      {
+        "id": "d220a32c-15b3-470b-8241-09ea1f0593d3",
+        "userId": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+        "username": "TheBulletin",
+        "name": "TheBulletin",
+        "text": "Thanks for the updates!",
+        "timestamp": "2025-07-12T12:50:16.860Z"
+      }
+    ],
+    "likes": [
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "a0bacd67-3fd3-4444-b9fb-93e6f6ccac8c",
+    "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "text": "Is social media replacing traditional news sources?",
+    "genres": [
+      "News"
+    ],
+    "image": null,
+    "timestamp": "2025-06-29T09:40:00.000Z",
+    "comments": [
+      {
+        "id": "c9141eec-d08c-4bad-b456-52800afa9a04",
+        "userId": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+        "username": "TechieTom",
+        "name": "TechieTom",
+        "text": "Very relevant!",
+        "timestamp": "2025-07-12T12:30:25.223Z"
+      },
+      {
+        "id": "ee49a145-e31c-44b6-82d2-d4019e0876c3",
+        "userId": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+        "username": "NewsRadar",
+        "name": "NewsRadar",
+        "text": "Critical Topic!",
+        "timestamp": "2025-07-12T12:44:51.233Z"
+      }
+    ],
+    "likes": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "8a828e4a-eed4-4f47-97af-18338f0bb555",
+    "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "text": "New movie trailer just dropped! 🔥 Must watch.",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148588047.webp",
+    "timestamp": "2025-06-30T16:00:45.000Z",
+    "comments": [
+      {
+        "id": "202f5d17-e8cb-4dd8-a15b-e156176d4c89",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Exciting!",
+        "timestamp": "2025-07-12T12:21:52.202Z"
+      },
+      {
+        "id": "38c72613-ec85-4ea9-aad0-fac3a759f50d",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "Can't wait to see it!",
+        "timestamp": "2025-07-12T13:05:11.842Z"
+      }
+    ],
+    "likes": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "f6a0f2fe-f662-472a-a10b-9b18664061e8",
+    "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "text": "Weekend binge list 🍿 What's on yours?",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148610130.jpg",
+    "timestamp": "2025-07-07T16:05:45.000Z",
+    "comments": [],
+    "likes": [
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "f8a25e7b-1098-4c06-8f43-68a24df980be",
+    "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "text": "Caught this behind-the-scenes shot of filming. 🎬",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148640682.jpg",
+    "timestamp": "2025-07-09T14:42:00.000Z",
+    "comments": [
+      {
+        "id": "8df95fd0-f04c-4888-9c7a-68fbc9cb59c3",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "so Cool!",
+        "timestamp": "2025-07-12T13:11:00.761Z"
+      }
+    ],
+    "likes": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "9cc895c5-1032-446d-b8e2-d85d56b18634",
+    "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "text": "Red carpet glam from last night! ✨",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148673012.jpg",
+    "timestamp": "2025-07-09T20:10:00.000Z",
+    "comments": [
+      {
+        "id": "66059923-c669-463c-81ba-297996f750de",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "Stunning!",
+        "timestamp": "2025-07-12T13:11:33.063Z"
+      },
+      {
+        "id": "d651e782-2acc-429d-950f-411b927cd8ff",
+        "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+        "username": "EduNerd",
+        "name": "EduNerd",
+        "text": "Stunning outfits!",
+        "timestamp": "2025-07-12T13:23:16.533Z"
+      }
+    ],
+    "likes": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "c6128cf8-f79d-47fc-8161-ed9153758d28",
+    "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "text": "Which movie deserves an Oscar this year?",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": null,
+    "timestamp": "2025-07-03T19:25:30.000Z",
+    "comments": [
+      {
+        "id": "d3b98eaa-a1e4-4c2b-a0ad-41b5c10f6a5e",
+        "userId": "c841029c-c5b0-4869-b122-04dad8d97868",
+        "username": "ProPlayer24",
+        "name": "ProPlayer24",
+        "text": "Many great ones!",
+        "timestamp": "2025-07-12T12:22:49.937Z"
+      },
+      {
+        "id": "14eb3bf5-aa83-4dcb-8d85-357c7cc190fe",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "So many great picks!",
+        "timestamp": "2025-07-12T13:06:15.194Z"
+      },
+      {
+        "id": "3a82e645-e2a8-4134-b79e-622bb9e58379",
+        "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+        "username": "EduNerd",
+        "name": "EduNerd",
+        "text": "Many great films!",
+        "timestamp": "2025-07-12T13:23:35.215Z"
+      }
+    ],
+    "likes": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "be6a54b5-9f00-4065-8b21-09775b97bd82",
+    "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "text": "New album out now! 🎧 Check it out.",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148804696.jpg",
+    "timestamp": "2025-07-09T17:35:20.000Z",
+    "comments": [
+      {
+        "id": "89e7fa1b-9e1b-4993-b94a-10b4d7bd5cc3",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Great tunes!",
+        "timestamp": "2025-07-12T13:00:24.367Z"
+      },
+      {
+        "id": "c37cba81-3a39-4e64-a803-a85c7e253fd4",
+        "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+        "username": "LearnWithMe",
+        "name": "LearnWithMe",
+        "text": "Excited for your new album!",
+        "timestamp": "2025-07-12T13:19:08.764Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "efca4488-e9c0-4a82-ad93-44df5408579a",
+    "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "text": "Chill beats or rock anthems — what’s your vibe today?",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148829846.jpg",
+    "timestamp": "2025-07-10T12:00:29.849Z",
+    "comments": [
+      {
+        "id": "a41eb3b5-ed13-410f-ad02-6706e4c0ed47",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "I go with chill vibes!",
+        "timestamp": "2025-07-12T13:12:34.627Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "9cacb9ff-8d81-4780-8392-c89dc6850bce",
+    "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "text": "Live concert moments are unmatched 🎤🔥",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148855399.webp",
+    "timestamp": "2025-07-06T10:20:00.000Z",
+    "comments": [
+      {
+        "id": "6f0a38a9-a1a2-49ac-abdb-df50fc3c4b37",
+        "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+        "username": "ShowTimez",
+        "name": "ShowTimez",
+        "text": "Sounds awesome!",
+        "timestamp": "2025-07-12T13:12:53.994Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2.5,
+    "scoringFactors": {
+      "views": 2.5
+    }
+  },
+  {
+    "id": "13e86575-1e1c-40ea-9e50-a8a9c75822c3",
+    "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "text": "Studio session in progress 🎹🎚️",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148880097.jpg",
+    "timestamp": "2025-07-05T12:10:40.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "ab0e00fb-8d5e-4f9d-8f9d-7843a766751b",
+    "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "text": "Who’s your all-time favorite artist?",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": null,
+    "timestamp": "2025-07-03T11:45:00.000Z",
+    "comments": [
+      {
+        "id": "bedd58ad-bca7-404a-9299-46135c2594b4",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "So many to choose!",
+        "timestamp": "2025-07-12T13:01:14.848Z"
+      },
+      {
+        "id": "99bb5131-3681-4105-a42c-e1736d5cc359",
+        "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+        "username": "LearnWithMe",
+        "name": "LearnWithMe",
+        "text": "So many great artists!",
+        "timestamp": "2025-07-12T13:20:05.998Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "9933f972-53ac-429e-b69a-083546a90c47",
+    "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "text": "Classic sitcoms never get old! 😂📺",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148954119.jpeg",
+    "timestamp": "2025-07-02T14:33:10.000Z",
+    "comments": [
+      {
+        "id": "f3517a80-3f5e-4b89-9459-2d9090dc6c0d",
+        "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+        "username": "CodeCraft",
+        "name": "CodeCraft",
+        "text": "Agreed!",
+        "timestamp": "2025-07-12T12:33:57.793Z"
+      }
+    ],
+    "likes": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "views": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "4ee7ff41-c64e-4f1a-8206-3c95694b0fe3",
+    "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "text": "Late-night show highlights are hilarious.",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148972650.avif",
+    "timestamp": "2025-07-06T18:33:15.000Z",
+    "comments": [
+      {
+        "id": "881587ad-a9c9-4ab2-ad1d-1d926b3be47a",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "so funny!",
+        "timestamp": "2025-07-12T13:07:16.340Z"
+      }
+    ],
+    "likes": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "views": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "5588496d-0234-4086-985d-4df18acd2aa9",
+    "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "text": "Movie marathon with snacks = perfect Sunday.",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752148992201.webp",
+    "timestamp": "2025-07-04T15:50:00.000Z",
+    "comments": [
+      {
+        "id": "7893ec64-23ed-439a-9363-ca8fdde60ab8",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Sounds fun!",
+        "timestamp": "2025-07-12T13:01:56.817Z"
+      }
+    ],
+    "likes": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "views": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "4bb64730-882a-4c5d-9f99-5316434a1ca9",
+    "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "text": "Who else is rewatching the Harry Potter series? 🙋‍♂️",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": "/image-uploads/1752149016750.jpg",
+    "timestamp": "2025-07-01T13:20:00.000Z",
+    "comments": [
+      {
+        "id": "e7958ad4-5029-42bb-ac18-cd628db01932",
+        "userId": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+        "username": "CodeCraft",
+        "name": "CodeCraft",
+        "text": "Love Harry Potter!",
+        "timestamp": "2025-07-12T12:34:50.309Z"
+      },
+      {
+        "id": "507dbdb1-4414-42ba-8a5b-f3d5e68ccc02",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Harry Potter fan here!",
+        "timestamp": "2025-07-12T13:02:18.916Z"
+      }
+    ],
+    "likes": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "views": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "6603135f-0373-4317-b557-27f8e4fda76c",
+    "userId": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "text": "What’s the most underrated show ever?",
+    "genres": [
+      "Entertainment"
+    ],
+    "image": null,
+    "timestamp": "2025-06-29T11:15:30.000Z",
+    "comments": [
+      {
+        "id": "996a2114-ead0-4110-a131-acee0a8f0600",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "It's House MD",
+        "timestamp": "2025-07-12T13:08:08.376Z"
+      }
+    ],
+    "likes": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "views": [
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "b0755ffd-4272-4984-bd7c-549b71b674a6",
+    "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "text": "Finished reading “Atomic Habits” — highly recommended! 📘✨",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149158342.jpg",
+    "timestamp": "2025-07-05T14:20:00.000Z",
+    "comments": [
+      {
+        "id": "d9f1e88f-bc51-4336-983b-15c89e347949",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Love that book!",
+        "timestamp": "2025-07-12T13:03:06.235Z"
+      },
+      {
+        "id": "4002db09-2f5f-4d5a-be35-ca261b6c57b5",
+        "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+        "username": "EduNerd",
+        "name": "EduNerd",
+        "text": "Love that book!",
+        "timestamp": "2025-07-12T13:21:14.816Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "9894ea0b-65a2-4d7c-9e5a-4c55d8d0f7fd",
+    "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "text": "Top 5 YouTube channels for learning coding 🔥",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752149216800.jpeg",
+    "timestamp": "2025-07-09T10:45:00.000Z",
+    "comments": [],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "92aadb70-2222-4a5a-b437-6cc47486ff37",
+    "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "text": "Sunday = study grind 📚☕",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149260870.jpg",
+    "timestamp": "2025-06-30T18:15:00.000Z",
+    "comments": [
+      {
+        "id": "5798c641-8555-428f-8712-57c7cdd75408",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Keep up the hard work!",
+        "timestamp": "2025-07-12T13:03:37.523Z"
+      },
+      {
+        "id": "387f0f8e-a323-4fd6-a016-f73969aeb255",
+        "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+        "username": "EduNerd",
+        "name": "EduNerd",
+        "text": "Keep up the hard work!",
+        "timestamp": "2025-07-12T13:21:40.199Z"
+      }
+    ],
+    "likes": [],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "d9fbaacf-a518-4851-8ab1-034b9305f931",
+    "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "text": "Revising linear algebra for tomorrow’s test.",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149284251.jpg",
+    "timestamp": "2025-07-04T10:55:00.000Z",
+    "comments": [],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "786eb9ea-9799-4637-a832-56ecb691bc5c",
+    "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "text": "What’s your most productive study routine?",
+    "genres": [
+      "Education"
+    ],
+    "image": null,
+    "timestamp": "2025-06-29T07:50:00.000Z",
+    "comments": [
+      {
+        "id": "7d21664d-ffb0-4490-acc8-56d1dd2bb20f",
+        "userId": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+        "username": "CineBuzz",
+        "name": "CineBuzz",
+        "text": "Consistent breaks help!",
+        "timestamp": "2025-07-12T13:04:08.241Z"
+      }
+    ],
+    "likes": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "views": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "70be1d35-c6fb-4ed1-879f-a7965ad33e5f",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Flashcards changed how I memorize everything.",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149394674.webp",
+    "timestamp": "2025-07-08T08:50:00.000Z",
+    "comments": [
+      {
+        "id": "eb9005f7-4e59-4a80-86cc-575a4e3fbb94",
+        "userId": "f183c80c-65c8-48bf-b279-80a3358a665e",
+        "username": "LearnWithMe",
+        "name": "LearnWithMe",
+        "text": "Great strategy!",
+        "timestamp": "2025-07-12T13:15:17.199Z"
+      }
+    ],
+    "likes": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 0.5,
+    "scoringFactors": {
+      "views": 0.5
+    }
+  },
+  {
+    "id": "dd6fc445-1d85-4647-ba94-af5154e03560",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Attending a seminar on AI in schools 🤖📖",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752149419604.webp",
+    "timestamp": "2025-07-08T20:05:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "dc4499e4-cd2e-4e3d-884a-fd37040ed0dc",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Group study sessions > solo cramming?",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149441689.webp",
+    "timestamp": "2025-06-28T13:42:00.000Z",
+    "comments": [],
+    "likes": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 0.5,
+    "scoringFactors": {
+      "views": 0.5
+    }
+  },
+  {
+    "id": "5e856fa9-d205-40a7-b52b-762bdf27b383",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Classroom debates really sharpen thinking.",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149467785.jpg",
+    "timestamp": "2025-07-03T17:00:00.000Z",
+    "comments": [],
+    "likes": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 0.5,
+    "scoringFactors": {
+      "views": 0.5
+    }
+  },
+  {
+    "id": "62b0d95a-d817-4cbb-a14e-89d51313000d",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Do you prefer handwritten or digital notes?",
+    "genres": [
+      "Education"
+    ],
+    "image": null,
+    "timestamp": "2025-06-27T09:00:00.000Z",
+    "comments": [],
+    "likes": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "views": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "score": 0.5,
+    "scoringFactors": {
+      "views": 0.5
+    }
+  },
+  {
+    "id": "5f88cab7-d564-4a12-964a-250ef0576a75",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Math hacks that saved me hours during finals. 🧠📐",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149586819.jpg",
+    "timestamp": "2025-07-02T21:25:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "34318653-97c5-409d-a62d-8295a2c6cb70",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Online learning platforms: worth the hype?",
+    "genres": [
+      "Tech",
+      "Education"
+    ],
+    "image": "/image-uploads/1752149624868.jpg",
+    "timestamp": "2025-06-24T15:00:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "4a4ab1f8-a23c-43e3-bdd5-5253cd983aef",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Mind maps for the win! 🧠🖊️",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149795289.gif",
+    "timestamp": "2025-07-02T09:40:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "d8487edc-e4b6-41ae-9b60-69f8949abfc1",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "Finished my research project! Feels great.",
+    "genres": [
+      "Education"
+    ],
+    "image": "/image-uploads/1752149837742.webp",
+    "timestamp": "2025-06-26T17:30:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "277102a0-680c-47ed-a2eb-b45921bbd1dc",
+    "userId": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "text": "What’s harder — exams or assignments?",
+    "genres": [
+      "Education"
+    ],
+    "image": null,
+    "timestamp": "2025-06-25T10:55:00.000Z",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": "942a7cf0-35e2-45ff-a8b2-bc24998b01a5",
+    "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "text": "When you open your camera accidentally 😂📷",
+    "genres": [
+      "Entertainment",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150212894.png",
+    "timestamp": "2025-06-27T10:30:00.000Z",
+    "comments": [
+      {
+        "id": "1ed5e322-bfdd-4303-b067-e1bfb20c1f9b",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "So relatable!",
+        "timestamp": "2025-07-12T12:39:59.349Z"
+      },
+      {
+        "id": "f1f05820-6bc7-4127-9590-acec996bc9e5",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "Story of my life",
+        "timestamp": "2025-07-12T13:08:27.960Z"
+      }
+    ],
+    "likes": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "fd0bc4f8-74f1-4ac7-a65e-6e30f7c5d0f4",
+    "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "text": "Programmers when their code finally works:",
+    "genres": [
+      "Tech",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150249593.jpg",
+    "timestamp": "2025-07-09T21:45:00.000Z",
+    "comments": [
+      {
+        "id": "0572e1cf-5123-4afc-90b9-786d0e2cb201",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Happens to me!",
+        "timestamp": "2025-07-12T12:40:13.959Z"
+      },
+      {
+        "id": "ba3b5aec-86b8-47e7-a5bd-9311031ae93f",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "that movement is insane!",
+        "timestamp": "2025-07-12T13:36:55.473Z"
+      }
+    ],
+    "likes": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "abc46c8c-be98-4249-bf61-996d427a0953",
+    "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "text": "Monday mornings hit different 😩☕",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150504548.jpg",
+    "timestamp": "2025-07-03T10:05:00.000Z",
+    "comments": [
+      {
+        "id": "3ba7e081-6067-43de-b80d-10d2795f1070",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "Definitely!",
+        "timestamp": "2025-07-12T13:31:47.980Z"
+      }
+    ],
+    "likes": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "2b67ebc4-9300-45f8-adac-dadeed98f8ab",
+    "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "text": "Internet went out. Had to interact with humans.",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150542681.jpg",
+    "timestamp": "2025-07-06T11:30:30.000Z",
+    "comments": [
+      {
+        "id": "486219de-ca31-4d7a-b74a-8076df1816a7",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "Oh! no",
+        "timestamp": "2025-07-12T12:40:48.630Z"
+      },
+      {
+        "id": "edc047db-f74b-41b8-a871-ed80c3a6dcb6",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "Oh no!",
+        "timestamp": "2025-07-12T13:32:07.432Z"
+      },
+      {
+        "id": "2b79ae2a-7182-4958-b0a6-e151fbebe455",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "i did't understand!",
+        "timestamp": "2025-07-12T13:37:28.091Z"
+      }
+    ],
+    "likes": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "c1030a5d-2970-42bb-964f-ea15990d6ee0",
+    "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "text": "Funniest meme you’ve seen today? Drop it below 👇",
+    "genres": [
+      "Memes"
+    ],
+    "image": null,
+    "timestamp": "2025-07-02T13:00:00.000Z",
+    "comments": [
+      {
+        "id": "5ae9476f-4cfe-4bdc-a5b1-1b7c946a7c35",
+        "userId": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+        "username": "AI_Brain",
+        "name": "AI_Brain",
+        "text": "I love memes!",
+        "timestamp": "2025-07-12T12:41:09.363Z"
+      },
+      {
+        "id": "5c8cae4d-d38f-4ca2-a535-5f7d24c833f5",
+        "userId": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+        "username": "MusicMuse",
+        "name": "MusicMuse",
+        "text": "Always love memes",
+        "timestamp": "2025-07-12T13:09:15.273Z"
+      }
+    ],
+    "likes": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "590a9ae5-03ca-4f7a-99c6-a6669c4e84eb",
+    "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "text": "Student budget vs Apple prices",
+    "genres": [
+      "Education",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150642348.webp",
+    "timestamp": "2025-07-09T19:10:00.000Z",
+    "comments": [
+      {
+        "id": "0456873a-58f4-41fe-b0f0-6d9a50918972",
+        "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+        "username": "MemeMachine",
+        "name": "MemeMachine",
+        "text": "So relatable!",
+        "timestamp": "2025-07-12T13:26:17.114Z"
+      },
+      {
+        "id": "725e1c93-9e7a-443c-ad21-55fd9a175a04",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "that's relatable!",
+        "timestamp": "2025-07-12T13:38:17.592Z"
+      }
+    ],
+    "likes": [
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "f7661ce2-ef81-45f0-93db-aba42caa1ed9",
+    "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "text": "That one friend who never studies but tops anyway.",
+    "genres": [
+      "Education",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150786799.png",
+    "timestamp": "2025-07-07T14:22:00.000Z",
+    "comments": [],
+    "likes": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "e48a9c4f-b7bc-4d8e-816d-47aecf3cbc35",
+    "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "text": "My brain at 3am: let’s remember that embarrassing moment from 2009.",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150830863.jpg",
+    "timestamp": "2025-07-09T17:00:00.000Z",
+    "comments": [
+      {
+        "id": "642f1700-36c5-4230-9bf4-fcda838295ef",
+        "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+        "username": "MemeMachine",
+        "name": "MemeMachine",
+        "text": "Been there!",
+        "timestamp": "2025-07-12T13:27:11.715Z"
+      },
+      {
+        "id": "1bb9ffdf-a8fa-4b91-befa-ee3862b2b50e",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "It's a daily routine",
+        "timestamp": "2025-07-12T13:39:16.040Z"
+      }
+    ],
+    "likes": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "ff3f8db5-1da6-454a-9386-143886d5ca3c",
+    "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "text": "How I think I look vs How I really look 🤡",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150859333.jpg",
+    "timestamp": "2025-07-05T20:50:45.000Z",
+    "comments": [
+      {
+        "id": "6cf94d56-2161-4c32-915b-8b30c58384d3",
+        "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+        "username": "MemeMachine",
+        "name": "MemeMachine",
+        "text": "😂",
+        "timestamp": "2025-07-12T13:27:35.201Z"
+      },
+      {
+        "id": "466577d0-3006-468a-89c4-82e9e416fa05",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "Literal clown hours 🤡💀",
+        "timestamp": "2025-07-12T13:39:32.027Z"
+      }
+    ],
+    "likes": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "4782c30d-a08a-4ad7-9412-b2471cf4bf75",
+    "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "text": "Tag your meme buddy who always spams your DMs 😂",
+    "genres": [
+      "Memes"
+    ],
+    "image": null,
+    "timestamp": "2025-06-28T12:42:00.000Z",
+    "comments": [],
+    "likes": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1,
+    "scoringFactors": {
+      "views": 1
+    }
+  },
+  {
+    "id": "12b66a00-fd37-4c63-b4f8-c4bebe19a7cf",
+    "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "text": "POV: You forgot there’s a test today.",
+    "genres": [
+      "Education",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752150981668.png",
+    "timestamp": "2025-06-29T08:55:00.000Z",
+    "comments": [
+      {
+        "id": "9cdb0bfd-5d57-41c0-adbf-e93fe966ac43",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "oh no!",
+        "timestamp": "2025-07-12T13:32:50.532Z"
+      }
+    ],
+    "likes": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 1.5,
+    "scoringFactors": {
+      "views": 1.5
+    }
+  },
+  {
+    "id": "5311c989-43f9-4c30-af9e-673c3c53efe4",
+    "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "text": "When your laptop crashes and you didn’t save your work.",
+    "genres": [
+      "Memes",
+      "Technology"
+    ],
+    "image": "/image-uploads/1752151103739.png",
+    "timestamp": "2025-07-05T09:40:00.000Z",
+    "comments": [
+      {
+        "id": "f3e1265d-83a1-4dc7-b8d7-c99e7e45b6c2",
+        "userId": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+        "username": "DailyPulse",
+        "name": "DailyPulse",
+        "text": "So frustrating!",
+        "timestamp": "2025-07-12T12:58:18.582Z"
+      },
+      {
+        "id": "0ad647cc-2da8-45b4-bdb0-0c03940176a0",
+        "userId": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+        "username": "MemeMachine",
+        "name": "MemeMachine",
+        "text": "This hurts!",
+        "timestamp": "2025-07-12T13:28:19.668Z"
+      },
+      {
+        "id": "fd465938-b5b2-435d-8f32-a3776704bf99",
+        "userId": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+        "username": "JustForLOLZ",
+        "name": "JustForLOLZ",
+        "text": "The Worst!",
+        "timestamp": "2025-07-12T13:33:13.116Z"
+      },
+      {
+        "id": "9de28721-1d1a-499e-97ca-c29f3d4a409d",
+        "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+        "username": "RelatableAF",
+        "name": "RelatableAF",
+        "text": "Worst thing that can happen!",
+        "timestamp": "2025-07-12T13:40:58.077Z"
+      }
+    ],
+    "likes": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "edb0f293-325c-4d46-b93b-6ebbb4f92801"
+    ],
+    "views": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "6bb54cdb-3493-47de-83af-b8e810758d1f",
+    "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "text": "Online classes be like: “Can you hear me?” 👂💻",
+    "genres": [
+      "Education",
+      "Memes"
+    ],
+    "image": "/image-uploads/1752151175538.png",
+    "timestamp": "2025-06-30T18:10:00.000Z",
+    "comments": [],
+    "likes": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "e899bedc-0bb2-41a6-8e5f-f691147d2d6a",
+    "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "text": "When the squad agrees to go out but no one makes a plan.",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752151221869.jpg",
+    "timestamp": "2025-07-04T16:18:00.000Z",
+    "comments": [],
+    "likes": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "a917b055-3c6c-4a81-80ef-511e2c7cd770",
+    "userId": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "text": "How do memes even get funnier at 2am?",
+    "genres": [
+      "Memes"
+    ],
+    "image": null,
+    "timestamp": "2025-07-01T21:10:00.000Z",
+    "comments": [],
+    "likes": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "views": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "score": 2,
+    "scoringFactors": {
+      "views": 2
+    }
+  },
+  {
+    "id": "2872c7ba-9695-498b-9761-1fdd29e6c9c1",
+    "userId": "29707cd2-08f0-4cf6-93d3-28fc77c326ba",
+    "text": "hey how its going in your life",
+    "genres": [
+      "Memes"
+    ],
+    "image": "/image-uploads/1752331020654.png",
+    "timestamp": "2025-07-12T14:37:00.673Z",
+    "comments": [],
+    "likes": []
+  }
+]

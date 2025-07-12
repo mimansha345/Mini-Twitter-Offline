@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suggested Users | Mini Twitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    :root {
+      --card-transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --primary-gradient: linear-gradient(135deg, #1da1f2, #1a91da);
+      --danger-gradient: linear-gradient(135deg, #f4212e, #e01e29);
+    }
+    
+    body {
+      background-color: #f7f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    
+    .suggestions-container {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: white;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transform: translateY(0);
+      opacity: 1;
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .onboarding-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .onboarding-header h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #0f1419;
+      margin-bottom: 12px;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+    
+    .onboarding-header p {
+      color: #536471;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .progress-container {
+      margin-bottom: 40px;
+    }
+    
+    .progress-bar {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      max-width: 250px;
+      margin: 0 auto 20px;
+    }
+    
+    .progress-step {
+      width: 16px;
+      height: 16px;
+      background-color: #cfd9de;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+    
+    .progress-step.active {
+      background: var(--primary-gradient);
+      transform: scale(1.4);
+      box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.2);
+    }
+    
+    .progress-step.completed {
+      background: var(--primary-gradient);
+    }
+    
+    .progress-line {
+      position: absolute;
+      top: 7px;
+      left: 16px;
+      right: 16px;
+      height: 3px;
+      background-color: #cfd9de;
+      z-index: 1;
+    }
+    
+    .progress-line-filled {
+      position: absolute;
+      top: 7px;
+      left: 16px;
+      width: 50%;
+      height: 3px;
+      background: var(--primary-gradient);
+      z-index: 1;
+      transition: width 0.6s ease-in-out;
+    }
+    
+    .progress-text {
+      text-align: center;
+      font-size: 14px;
+      color: #536471;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    
+    #users-list {
+      max-height: 500px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+      padding-right: 5px;
+      /* Smooth scrolling */
+      scroll-behavior: smooth;
+      /* Stylish scrollbar */
+      scrollbar-width: thin;
+      scrollbar-color: rgba(29, 161, 242, 0.3) transparent;
+    }
+    
+    #users-list::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    #users-list::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    #users-list::-webkit-scrollbar-thumb {
+      background-color: rgba(29, 161, 242, 0.3);
+      border-radius: 10px;
+    }
+    
+    .user-suggestion {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding: 20px;
+      border: 2px solid #eff3f4;
+      border-radius: 16px;
+      transition: all var(--card-transition);
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+      animation: slideIn 0.4s ease-out forwards;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .user-suggestion:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      border-color: #d0e5f2;
+    }
+    
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding-right: 15px;
+    }
+    
+    .user-info strong {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f1419;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .user-genre {
+      font-size: 15px;
+      color: #536471;
+      line-height: 1.5;
+      margin-top: 5px;
+      display: inline-block;
+      background-color: #f7f9fa;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    
+    .follow-btn {
+      padding: 10px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .follow-btn:not(.following) {
+      background: var(--primary-gradient);
+      color: white;
+    }
+    
+    .follow-btn:not(.following):hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+    }
+    
+    .follow-btn.following {
+      background-color: white;
+      color: #0f1419;
+      border: 1px solid #cfd9de;
+    }
+    
+    .follow-btn.following:hover {
+      background-color: #ffebe9;
+      color: #f4212e;
+      border-color: #f4212e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(244, 33, 46, 0.15);
+    }
+    
+    .action-container {
+      position: relative;
+      margin-top: 30px;
+    }
+    
+    .selected-count {
+      text-align: center;
+      font-size: 16px;
+      color: #536471;
+      margin-bottom: 15px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    
+    .selected-count span {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+    
+    .continue-btn {
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 16px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      background: var(--primary-gradient);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .continue-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.7s ease;
+    }
+    
+    .continue-btn:hover::after {
+      left: 100%;
+    }
+    
+    .continue-btn:not(:disabled):hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(29, 161, 242, 0.3);
+      background: linear-gradient(135deg, #1a91da, #0d8ecf);
+    }
+    
+    .continue-btn:disabled {
+      background: linear-gradient(135deg, #8ecdf8, #7abce7);
+      cursor: not-allowed;
+      opacity: 0.8;
+    }
+    
+    .no-matches {
+      text-align: center;
+      padding: 40px 30px;
+      color: #536471;
+      border: 2px dashed #d0e5f2;
+      border-radius: 16px;
+      margin: 20px 0;
+      animation: pulse 2s infinite;
+    }
+    
+    .no-matches p:first-child {
+      font-size: 18px;
+      font-weight: 600;
+      color: #0f1419;
+      margin-bottom: 10px;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px 30px;
+      color: #536471;
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    .loading p {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    
+    .loading-spinner {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(29, 161, 242, 0.15);
+      border-top: 4px solid var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(29, 161, 242, 0.2); }
+      70% { box-shadow: 0 0 0 8px rgba(29, 161, 242, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(29, 161, 242, 0); }
+    }
+    
+    @media (max-width: 768px) {
+      .suggestions-container {
+        padding: 30px 20px;
+        border-radius: 16px;
+      }
+      
+      .onboarding-header h2 {
+        font-size: 28px;
+      }
+      
+      .onboarding-header p {
+        font-size: 16px;
+      }
+      
+      .user-suggestion {
+        padding: 16px;
+      }
+      
+      .follow-btn {
+        padding: 8px 16px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .content-wrapper {
+        padding: 20px 10px;
+      }
+      
+      .suggestions-container {
+        padding: 25px 15px;
+      }
+      
+      .onboarding-header {
+        margin-bottom: 30px;
+      }
+      
+      .onboarding-header h2 {
+        font-size: 24px;
+      }
+      
+      .onboarding-header p {
+        font-size: 15px;
+      }
+      
+      .user-suggestion {
+        padding: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .user-info {
+        margin-bottom: 15px;
+        width: 100%;
+      }
+      
+      .follow-btn {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .continue-btn {
+        padding: 14px;
+      }
+      
+      .progress-bar {
+        max-width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Mini Twitter</div>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="suggestions-container">
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress-step completed"></div>
+          <div class="progress-step active"></div>
+          <div class="progress-line"></div>
+          <div class="progress-line-filled"></div>
+        </div>
+        <div class="progress-text">Step 2 of 2: Find people to follow</div>
+      </div>
+      
+      <div class="onboarding-header">
+        <h2>People you might like</h2>
+        <p>Follow accounts based on your interests</p>
+      </div>
+      
+      <div id="users-list">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          <p>Finding people for you...</p>
+        </div>
+      </div>
+      
+      <div class="action-container">
+        <div class="selected-count"><span>0</span> followed</div>
+        <button id="continueBtn" class="continue-btn" disabled>Continue to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Authentication check
+      const userId = localStorage.getItem('userId');
+      if (!userId) {
+        window.location.href = '/';
+        return;
+      }
+      
+      // Check if genres are selected
+      const selectedGenres = JSON.parse(localStorage.getItem('selectedGenres') || '[]');
+      if (selectedGenres.length === 0) {
+        window.location.href = '/select-genres.html';
+        return;
+      }
+      
+      const usersList = document.getElementById('users-list');
+      const continueBtn = document.getElementById('continueBtn');
+      const selectedCountDiv = document.querySelector('.selected-count');
+      let followedUsers = 0;
+      
+      // Function to update UI
+      function updateUI() {
+        continueBtn.disabled = followedUsers === 0;
+        selectedCountDiv.innerHTML = `<span>${followedUsers}</span> ${followedUsers === 1 ? 'person' : 'people'} followed`;
+        
+        // Add a small animation effect when count changes
+        selectedCountDiv.animate([
+          { transform: 'scale(1.1)', color: 'var(--primary-color)' },
+          { transform: 'scale(1)', color: '#536471' }
+        ], {
+          duration: 300,
+          easing: 'ease-out'
+        });
+      }
+      
+      // Fetch all users with slight delay for loading animation
+      setTimeout(() => {
+        fetch('/users')
+          .then(response => response.json())
+          .then(users => {
+            // Filter out current user
+            const filteredUsers = users.filter(user => user.id !== userId);
+            
+            // Get current user to check who they're already following
+            const currentUser = users.find(user => user.id === userId);
+            const followingIds = currentUser?.following || [];
+            
+            // Filter users based on selected genres
+            const suggestedUsers = filteredUsers.filter(user => {
+              if (!user.genre) return false;
+              
+              const userGenres = user.genre.split(',').map(g => g.trim());
+              return selectedGenres.some(genre => userGenres.includes(genre));
+            });
+            
+            // Clear loading message
+            usersList.innerHTML = '';
+            
+            // If no matches, show message
+            if (suggestedUsers.length === 0) {
+              usersList.innerHTML = `
+                <div class="no-matches">
+                  <p>No users match your interests yet</p>
+                  <p>You can still follow some users to get started</p>
+                </div>
+              `;
+              
+              // Show all users instead
+              displayUsers(filteredUsers, followingIds);
+            } else {
+              displayUsers(suggestedUsers, followingIds);
+            }
+          })
+          .catch(error => {
+            console.error('Error fetching users:', error);
+            usersList.innerHTML = '<div class="no-matches">Error loading suggestions. Please try again.</div>';
+          });
+      }, 800); // Small delay to show loading animation
+      
+      function displayUsers(users, followingIds) {
+        // Sort alphabetically by username
+        users.sort((a, b) => (a.username > b.username) ? 1 : -1);
+        
+        // Count users already followed
+        users.forEach(user => {
+          if (followingIds.includes(user.id)) {
+            followedUsers++;
+          }
+        });
+        
+        // Update UI initially
+        updateUI();
+        
+        // Create and append user elements with staggered animation delay
+        users.forEach((user, index) => {
+          const isFollowing = followingIds.includes(user.id);
+          const userDiv = document.createElement('div');
+          userDiv.className = 'user-suggestion';
+          userDiv.style.animationDelay = `${index * 0.1}s`; // Staggered animation
+          
+          // Get a cleaner version of the genres for display
+          let displayGenre = user.genre || 'No interests specified';
+          if (displayGenre.length > 40) {
+            displayGenre = displayGenre.substring(0, 40) + '...';
+          }
+          
+          userDiv.innerHTML = `
+            <div class="user-info">
+              <strong>@${user.username}</strong>
+              <div class="user-genre">${displayGenre}</div>
+            </div>
+            <button class="follow-btn ${isFollowing ? 'following' : ''}" data-userid="${user.id}">
+              ${isFollowing ? 'Following' : 'Follow'}
+            </button>
+          `;
+          usersList.appendChild(userDiv);
+          
+          // Add follow button event listener
+          const followBtn = userDiv.querySelector('.follow-btn');
+          followBtn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-userid');
+            const isCurrentlyFollowing = this.classList.contains('following');
+            
+            // Add click animation
+            this.animate([
+              { transform: 'scale(0.95)' },
+              { transform: 'scale(1)' }
+            ], {
+              duration: 200,
+              easing: 'ease-out'
+            });
+            
+            // Update button UI with transition
+            if (isCurrentlyFollowing) {
+              this.textContent = 'Follow';
+              this.classList.remove('following');
+              followedUsers--;
+            } else {
+              this.textContent = 'Following';
+              this.classList.add('following');
+              followedUsers++;
+            }
+            
+            updateUI();
+            
+            // Send request to server
+            const url = isCurrentlyFollowing ? '/unfollow' : '/follow';
+            fetch(url, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                userId: userId,
+                followId: targetId
+              })
+            })
+            .catch(error => {
+              console.error('Error following/unfollowing user:', error);
+            });
+          });
+        });
+      }
+      
+      // Add event listener to continue button
+      continueBtn.addEventListener('click', function() {
+        // Add button click animation
+        this.textContent = 'Taking you home...';
+        
+        // Animate container before redirect
+        const container = document.querySelector('.suggestions-container');
+        container.style.transition = 'opacity 0.4s, transform 0.4s';
+        container.style.opacity = '0';
+        container.style.transform = 'translateY(-20px)';
+        
+        // Fill progress bar to 100% before redirect
+        document.querySelector('.progress-line-filled').style.width = '100%';
+        
+        // Redirect with slight delay for animations
+        setTimeout(() => {
+          window.location.href = '/home.html';
+        }, 600);
+      });
+    });
+  </script>
+</body>
+</html> 

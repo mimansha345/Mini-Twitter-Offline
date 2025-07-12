@@ -1,0 +1,425 @@
+[
+  {
+    "id": "296bfddd-0015-48ad-9e61-3b039ca8f958",
+    "name": "SportsFan",
+    "username": "SportsFan",
+    "password": "1",
+    "following": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1"
+    ],
+    "genre": "Sports",
+    "genrePreference": {
+      "Sports": 19.1,
+      "Education": 6.3,
+      "Entertainment": 3.2,
+      "Tech": 8.5
+    },
+    "authorAffinity": {
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb": 11.499999999999998,
+      "c841029c-c5b0-4869-b122-04dad8d97868": 9.499999999999998,
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 12.499999999999998
+    }
+  },
+  {
+    "id": "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+    "name": "Coach99",
+    "username": "Coach99",
+    "password": "1",
+    "following": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837"
+    ],
+    "genre": "Sports",
+    "genrePreference": {
+      "Sports": 14.999999999999998,
+      "Entertainment": 6.4,
+      "News": 7.5,
+      "Education": 2.1
+    },
+    "authorAffinity": {
+      "296bfddd-0015-48ad-9e61-3b039ca8f958": 9.5,
+      "c841029c-c5b0-4869-b122-04dad8d97868": 9.5,
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837": 9.5
+    }
+  },
+  {
+    "id": "c841029c-c5b0-4869-b122-04dad8d97868",
+    "name": "ProPlayer24",
+    "username": "ProPlayer24",
+    "password": "1",
+    "following": [
+      "296bfddd-0015-48ad-9e61-3b039ca8f958",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b"
+    ],
+    "genre": "Sports",
+    "genrePreference": {
+      "Sports": 15.099999999999998,
+      "Entertainment": 9.6,
+      "Education": 3.2
+    },
+    "authorAffinity": {
+      "296bfddd-0015-48ad-9e61-3b039ca8f958": 9.499999999999998,
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb": 9.5,
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b": 8.399999999999999
+    }
+  },
+  {
+    "id": "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+    "name": "TechieTom",
+    "username": "TechieTom",
+    "password": "1",
+    "following": [],
+    "genre": "Technology",
+    "genrePreference": {
+      "Tech": 18.099999999999998,
+      "Education": 4.300000000000001,
+      "Entertainment": 1.1,
+      "News": 7.5
+    },
+    "authorAffinity": {
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0": 11.499999999999998,
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240": 9.5,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 10.5
+    }
+  },
+  {
+    "id": "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+    "name": "CodeCraft",
+    "username": "CodeCraft",
+    "password": "1",
+    "following": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58"
+    ],
+    "genre": "Technology",
+    "genrePreference": {
+      "Tech": 12.999999999999998,
+      "Education": 3.3000000000000003,
+      "Entertainment": 9.6
+    },
+    "authorAffinity": {
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 8.5,
+      "ade1ae0b-c476-40ac-9f0f-5994afb68240": 7.5,
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58": 9.499999999999998
+    }
+  },
+  {
+    "id": "ade1ae0b-c476-40ac-9f0f-5994afb68240",
+    "name": "AI_Brain",
+    "username": "AI_Brain",
+    "password": "1",
+    "following": [
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58"
+    ],
+    "genre": "Technology",
+    "genrePreference": {
+      "Tech": 18.099999999999998,
+      "Education": 1.1,
+      "Entertainment": 2.1,
+      "Memes": 9.499999999999998
+    },
+    "authorAffinity": {
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 10.5,
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0": 11.499999999999998,
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58": 13.499999999999998
+    }
+  },
+  {
+    "id": "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+    "name": "NewsRadar",
+    "username": "NewsRadar",
+    "password": "1",
+    "following": [
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1"
+    ],
+    "genre": "News",
+    "genrePreference": {
+      "News": 14.899999999999999,
+      "Tech": 7.699999999999999,
+      "Education": 2.2
+    },
+    "authorAffinity": {
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6": 8.399999999999999,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 11.5,
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 4.5
+    }
+  },
+  {
+    "id": "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+    "name": "TheBulletin",
+    "username": "TheBulletin",
+    "password": "1",
+    "following": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb"
+    ],
+    "genre": "News",
+    "genrePreference": {
+      "News": 14.999999999999996,
+      "Education": 7.3999999999999995,
+      "Tech": 1.1,
+      "Sports": 7.499999999999999
+    },
+    "authorAffinity": {
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837": 9.499999999999998,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 9.5,
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb": 9.499999999999998
+    }
+  },
+  {
+    "id": "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+    "name": "DailyPulse",
+    "username": "DailyPulse",
+    "password": "1",
+    "following": [
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "genre": "News",
+    "genrePreference": {
+      "News": 13.999999999999998,
+      "Education": 2.2,
+      "Tech": 1.1,
+      "Memes": 5.4,
+      "Technology": 2.1
+    },
+    "authorAffinity": {
+      "cb1e5f69-fa0a-4554-bf2e-353a2df09837": 9.499999999999998,
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6": 6.4,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 1,
+      "c5518d91-559c-464c-bfe7-bca64f59fd16": 6.3999999999999995
+    }
+  },
+  {
+    "id": "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+    "name": "CineBuzz",
+    "username": "CineBuzz",
+    "password": "1",
+    "following": [
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "genre": "Entertainment",
+    "genrePreference": {
+      "Entertainment": 13.899999999999999,
+      "Education": 7.5,
+      "Tech": 1.1
+    },
+    "authorAffinity": {
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e": 8.399999999999999,
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58": 9.5,
+      "f183c80c-65c8-48bf-b279-80a3358a665e": 10.5
+    }
+  },
+  {
+    "id": "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+    "name": "MusicMuse",
+    "username": "MusicMuse",
+    "password": "1",
+    "following": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58"
+    ],
+    "genre": "Entertainment",
+    "genrePreference": {
+      "Entertainment": 16.099999999999998,
+      "Memes": 6.4
+    },
+    "authorAffinity": {
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b": 8.5,
+      "8047be67-19b7-4803-b40f-f7e9c7b16e58": 9.5,
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58": 8.399999999999999
+    }
+  },
+  {
+    "id": "8047be67-19b7-4803-b40f-f7e9c7b16e58",
+    "name": "ShowTimez",
+    "username": "ShowTimez",
+    "password": "1",
+    "following": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e",
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6"
+    ],
+    "genre": "Entertainment",
+    "genrePreference": {
+      "Entertainment": 12.899999999999999,
+      "News": 7.5,
+      "Tech": 1.1
+    },
+    "authorAffinity": {
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b": 8.5,
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e": 8.399999999999999,
+      "8fec6eb6-6196-4b49-b2b8-ca7bc4450fd6": 6.4,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 3.1
+    }
+  },
+  {
+    "id": "f183c80c-65c8-48bf-b279-80a3358a665e",
+    "name": "LearnWithMe",
+    "username": "LearnWithMe",
+    "password": "1",
+    "following": [
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0",
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e"
+    ],
+    "genre": "Education",
+    "genrePreference": {
+      "Education": 6.5,
+      "Tech": 8.6,
+      "Entertainment": 6.4
+    },
+    "authorAffinity": {
+      "ed16d590-0ca6-47a9-90ab-d406cc50c776": 6.3999999999999995,
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 1.1,
+      "668f09b1-3563-4e5f-953f-4272e4ce38c0": 9.5,
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e": 8.399999999999999
+    }
+  },
+  {
+    "id": "ed16d590-0ca6-47a9-90ab-d406cc50c776",
+    "name": "EduNerd",
+    "username": "EduNerd",
+    "password": "1",
+    "following": [
+      "f183c80c-65c8-48bf-b279-80a3358a665e",
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "c841029c-c5b0-4869-b122-04dad8d97868"
+    ],
+    "genre": "Education",
+    "genrePreference": {
+      "Education": 6.5,
+      "Tech": 1.1,
+      "Entertainment": 9.7,
+      "Sports": 6.5
+    },
+    "authorAffinity": {
+      "f183c80c-65c8-48bf-b279-80a3358a665e": 8.5,
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b": 9.5,
+      "c841029c-c5b0-4869-b122-04dad8d97868": 7.5
+    }
+  },
+  {
+    "id": "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+    "name": "MemeMachine",
+    "username": "MemeMachine",
+    "password": "1",
+    "following": [
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "genre": "Memes",
+    "genrePreference": {
+      "Education": 6.5,
+      "Memes": 13.999999999999998,
+      "Technology": 2.1,
+      "Tech": 1.1,
+      "News": 5.4,
+      "Entertainment": 1.1
+    },
+    "authorAffinity": {
+      "1f5f39ec-55bd-4959-8053-09fb3878effa": 10.5,
+      "c5518d91-559c-464c-bfe7-bca64f59fd16": 7.499999999999999,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 6.4,
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e": 1.1
+    }
+  },
+  {
+    "id": "1f5f39ec-55bd-4959-8053-09fb3878effa",
+    "name": "JustForLOLZ",
+    "username": "JustForLOLZ",
+    "password": "1",
+    "following": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "genre": "Memes",
+    "genrePreference": {
+      "Entertainment": 1.1,
+      "Memes": 13.999999999999998,
+      "Tech": 7.6,
+      "Education": 4.300000000000001,
+      "Technology": 2.1
+    },
+    "authorAffinity": {
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58": 8.5,
+      "c5518d91-559c-464c-bfe7-bca64f59fd16": 9.499999999999998,
+      "770ad81d-a220-4e0c-9c16-791d8cd1ada1": 8.5
+    }
+  },
+  {
+    "id": "c5518d91-559c-464c-bfe7-bca64f59fd16",
+    "name": "RelatableAF",
+    "username": "RelatableAF",
+    "password": "1",
+    "following": [
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "1f5f39ec-55bd-4959-8053-09fb3878effa"
+    ],
+    "genre": "Memes",
+    "genrePreference": {
+      "Entertainment": 4.4,
+      "Memes": 21.500000000000004,
+      "Tech": 3.2,
+      "Education": 7.5,
+      "Technology": 1.1,
+      "News": 5.4,
+      "Sports": 6.5
+    },
+    "authorAffinity": {
+      "79e775b3-def0-496b-b14e-8d4a7dc59e58": 9.499999999999998,
+      "1f5f39ec-55bd-4959-8053-09fb3878effa": 11.499999999999998,
+      "c5518d91-559c-464c-bfe7-bca64f59fd16": 6,
+      "a535fd40-24b3-4bd0-a2f6-89fd29c73a65": 6.4,
+      "fa7a8995-7476-4c1d-bee6-dd0a2dc91c2e": 0.1,
+      "c841029c-c5b0-4869-b122-04dad8d97868": 7.5
+    }
+  },
+  {
+    "id": "29707cd2-08f0-4cf6-93d3-28fc77c326ba",
+    "name": "1",
+    "username": "1",
+    "password": "1",
+    "following": [
+      "f3bd72ea-39d9-42e3-bda4-38ee0856c9fb",
+      "c841029c-c5b0-4869-b122-04dad8d97868",
+      "f183c80c-65c8-48bf-b279-80a3358a665e"
+    ],
+    "genre": "Sports, Education"
+  },
+  {
+    "id": "edb0f293-325c-4d46-b93b-6ebbb4f92801",
+    "name": "Mimansha",
+    "username": "mimu",
+    "password": "mimu5678",
+    "following": [
+      "e74e0de0-c8f6-4597-b7b5-18f00b2cab6b",
+      "c5518d91-559c-464c-bfe7-bca64f59fd16"
+    ],
+    "genre": "News, Entertainment, Memes",
+    "genrePreference": {
+      "Memes": 1,
+      "Technology": 1
+    },
+    "authorAffinity": {
+      "c5518d91-559c-464c-bfe7-bca64f59fd16": 1
+    }
+  }
+]

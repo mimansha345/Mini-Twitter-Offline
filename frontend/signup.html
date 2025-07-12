@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up | Mini Twitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    :root {
+      --card-transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --primary-gradient: linear-gradient(135deg, #1da1f2, #1a91da);
+      --input-bg: #f7f9fa;
+    }
+    
+    body {
+      background-color: #f7f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    
+    .auth-card {
+      max-width: 420px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: white;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .logo-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .logo-text {
+      font-size: 32px;
+      font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+  background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+    
+    .auth-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .auth-header h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f1419;
+      margin-bottom: 10px;
+    }
+    
+    .auth-header p {
+      color: #536471;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .auth-form {
+      margin-bottom: 25px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0f1419;
+      margin-bottom: 8px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #eff3f4;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #0f1419;
+      background-color: var(--input-bg);
+      transition: all 0.2s ease;
+    }
+    
+    .form-group input:focus {
+      border-color: #1da1f2;
+      background-color: #fff;
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.1);
+    }
+    
+    .form-group input::placeholder {
+      color: #8899a6;
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: var(--primary-gradient);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    
+    .submit-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.7s ease;
+    }
+    
+    .submit-btn:hover::after {
+      left: 100%;
+    }
+    
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(29, 161, 242, 0.3);
+      background: linear-gradient(135deg, #1a91da, #0d8ecf);
+    }
+    
+    .auth-links {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #536471;
+    }
+    
+    .auth-links a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    
+    .auth-links a:hover {
+      text-decoration: underline;
+      color: #0d8ecf;
+    }
+    
+    .progress-steps {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    
+    .step-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #e1e8ed;
+      margin: 0 4px;
+    }
+    
+    .step-indicator.active {
+      width: 24px;
+      border-radius: 4px;
+      background: var(--primary-gradient);
+    }
+    
+    .debug-container {
+      margin-top: 20px;
+      padding: 16px;
+      background-color: #f7f9fa;
+      border-radius: 8px;
+      border: 1px solid #eff3f4;
+      font-family: monospace;
+      font-size: 14px;
+      color: #536471;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+    }
+    
+    .loading {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s linear infinite;
+      margin-right: 10px;
+      display: none;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @media (max-width: 480px) {
+      .auth-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="auth-card">
+      <div class="logo-container">
+        <div class="logo-text">Mini Twitter</div>
+      </div>
+      
+      <div class="progress-steps">
+        <div class="step-indicator active"></div>
+        <div class="step-indicator"></div>
+        <div class="step-indicator"></div>
+      </div>
+      
+      <div class="auth-header">
+        <h2>Create your account</h2>
+        <p>Join the conversation today</p>
+      </div>
+      
+      <form id="signupForm" class="auth-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <span class="loading" id="loading-spinner"></span>
+          <span id="button-text">Create account</span>
+        </button>
+      </form>
+      
+      <div class="auth-links">
+        <p>Already have an account? <a href="/">Sign in</a></p>
+      </div>
+      
+      <div id="debug-output" class="debug-container"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Show loading state
+      const loadingSpinner = document.getElementById('loading-spinner');
+      const buttonText = document.getElementById('button-text');
+      const submitButton = document.querySelector('.submit-btn');
+      const debugOutput = document.getElementById('debug-output');
+      
+      // Reset UI state
+      loadingSpinner.style.display = 'inline-block';
+      buttonText.textContent = 'Creating account...';
+      submitButton.disabled = true;
+      debugOutput.style.display = 'block';
+      debugOutput.innerHTML = `<p>Creating account...</p>`;
+      
+      try {
+        // 1. Create the account
+        const signupRes = await fetch('http://localhost:3001/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        const signupResult = await signupRes.json();
+        debugOutput.innerHTML += `<p>Signup response: ${JSON.stringify(signupResult)}</p>`;
+        
+        if (!signupRes.ok) {
+          throw new Error(signupResult.message || 'Signup failed');
+        }
+        
+        debugOutput.innerHTML += `<p>Account created! Logging in...</p>`;
+        buttonText.textContent = 'Logging in...';
+        
+        // 2. Log the user in
+        const loginRes = await fetch('http://localhost:3001/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            username: data.username,
+            password: data.password
+          })
+        });
+        
+        const loginResult = await loginRes.json();
+        debugOutput.innerHTML += `<p>Login response: ${JSON.stringify(loginResult)}</p>`;
+        
+        if (!loginRes.ok) {
+          throw new Error(loginResult.message || 'Login failed');
+        }
+        
+        // 3. Store user data
+        const user = loginResult.data?.user || loginResult.user;
+        if (!user) {
+          throw new Error('No user data received');
+        }
+        
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        localStorage.setItem('userId', user.id);
+        localStorage.setItem('username', user.username);
+        localStorage.setItem('name', user.name || '');
+        
+        debugOutput.innerHTML += `<p>Login successful! Redirecting to genre selection...</p>`;
+        buttonText.textContent = 'Success!';
+        
+        // 4. Redirect to genre selection
+        setTimeout(() => {
+          window.location.href = '/select-genres.html';
+        }, 1000);
+        
+      } catch (error) {
+        console.error('Signup error:', error);
+        debugOutput.innerHTML += `<p>Error: ${error.message}</p>`;
+        
+        // Reset button state
+        loadingSpinner.style.display = 'none';
+        buttonText.textContent = 'Create Account';
+        submitButton.disabled = false;
+        
+        // Show error with animation
+        const inputFields = document.querySelectorAll('.form-group input');
+        inputFields.forEach(input => {
+          input.animate([
+            { borderColor: '#f4212e' },
+            { borderColor: '#eff3f4' }
+          ], {
+            duration: 600,
+            iterations: 1
+          });
+        });
+        
+        // Show error to user
+        alert(`Error: ${error.message}`);
+      }
+    });
+    
+    // Triple click to show debug panel
+    document.querySelector('.logo-text').addEventListener('click', function() {
+      if (!window.clickCount) window.clickCount = 0;
+      window.clickCount++;
+      
+      if (window.clickCount >= 3) {
+        document.getElementById('debug-output').style.display = 'block';
+        window.clickCount = 0;
+      }
+    });
+  </script>
+</body>
+</html>

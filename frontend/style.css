@@ -1,0 +1,816 @@
+/* Mini Twitter Offline - Main Styles */
+:root {
+  --primary-color: #1DA1F2;
+  --secondary-color: #14171A;
+  --background-color: #FFFFFF;
+  --light-gray: #E1E8ED;
+  --text-color: #14171A;
+  --border-radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f8fa;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+header {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--light-gray);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Forms */
+form {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0d8ecf;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #f5f8fa;
+}
+
+/* Tweet Styles */
+.tweet-composer {
+  margin-bottom: 20px;
+}
+
+.tweet {
+  background-color: var(--background-color);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Add styles for the tweet score display */
+.tweet-score {
+  margin-left: auto;
+  background-color: #f8f9fa;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #1da1f2;
+  font-weight: 600;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tweet-user {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tweet-username {
+  color: #657786;
+  font-size: 0.9rem;
+}
+
+.tweet-content {
+  margin-bottom: 10px;
+}
+
+.tweet-image-container {
+  margin: 10px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 500px;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.tweet-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 1;
+}
+
+.tweet-image-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-color: rgba(29, 161, 242, 0.3);
+}
+
+.tweet-image {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ensure all tweet images have a dark background */
+.tweet img[src$=".jpg"],
+.tweet img[src$=".jpeg"],
+.tweet img[src$=".png"],
+.tweet img[src$=".gif"],
+.tweet img[src$=".webp"] {
+  background-color: #000;
+  border-radius: 8px;
+}
+
+/* For portrait images */
+.tweet-image.portrait {
+  height: 100%;
+  width: auto;
+  max-height: 500px;
+}
+
+/* For landscape images */
+.tweet-image.landscape {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.image-fallback {
+  border: 1px solid var(--light-gray);
+  background-color: #f8f9fa;
+}
+
+.tweet-footer {
+  color: #657786;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/* Tweet Actions */
+.tweet-actions {
+  display: flex;
+  margin-top: 15px;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 10px;
+}
+
+.btn-action {
+  background: none;
+  border: none;
+  color: #657786;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.btn-action:hover {
+  background: none;
+  color: var(--primary-color);
+}
+
+.btn-action.liked {
+  color: #e0245e;
+}
+
+/* Add styles for the "Not Interested" button */
+.btn-action.not-interested {
+  margin-left: auto;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+}
+
+.btn-action.not-interested:hover {
+  opacity: 1;
+  background-color: #f8f9fa;
+  color: #e0245e;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.comments-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comment {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-time {
+  color: #657786;
+  font-size: 0.7rem;
+  margin-left: auto;
+}
+
+.comment-content {
+  font-size: 0.9rem;
+}
+
+.comment-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+}
+
+.no-comments {
+  color: #657786;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+/* User List */
+.user-list {
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}
+
+/* Login & Signup Pages */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Full-screen Image Modal Styles */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.image-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  max-height: 800px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-modal-close {
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease;
+}
+
+.image-modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-close {
+  top: 10px;
+  left: 15px;
+}
+
+.image-modal-body {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.image-modal-left {
+  flex: 2;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-modal-left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-modal-right {
+  flex: 1;
+  background-color: var(--background-color);
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 1px solid var(--light-gray);
+}
+
+#modalTweetInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .image-modal-body {
+    flex-direction: column;
+  }
+  
+  .image-modal-left {
+    height: 60%;
+  }
+  
+  .image-modal-right {
+    height: 40%;
+    border-left: none;
+    border-top: 1px solid var(--light-gray);
+  }
+}
+
+/* Style for the image container to indicate it's clickable */
+.tweet-image-container:hover {
+  opacity: 0.9;
+}
+
+/* Add styles for the genre dropdown */
+.genre-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+/* Add a label for the genre in the tweet display */
+.tweet-genre {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background-color: #e8f5fd;
+  color: #1da1f2;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+
+/* Add styles for the debug modal */
+.debug-modal {
+  z-index: 2000;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.debug-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.debug-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.debug-table th, .debug-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.debug-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* Scoring factors points styling */
+.positive-points {
+  color: #28a745;
+  font-weight: 600;
+  text-align: right;
+}
+
+.negative-points {
+  color: #dc3545;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Hover effect for debug table rows */
+.debug-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive table for small screens */
+@media (max-width: 600px) {
+  .debug-table {
+    font-size: 0.9em;
+  }
+  
+  .debug-table th,
+  .debug-table td {
+    padding: 6px 8px;
+  }
+}
+
+.debug-note {
+  font-size: 0.8rem;
+  color: #657786;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.tweet-score {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.tweet-score:hover {
+  transform: scale(1.1);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90%;
+  max-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+/* Image modal content */
+.modal-content {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background-color: #000;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure the image takes maximum available space while maintaining aspect ratio */
+.modal-content[src$=".jpg"],
+.modal-content[src$=".jpeg"],
+.modal-content[src$=".png"],
+.modal-content[src$=".gif"],
+.modal-content[src$=".webp"] {
+  max-height: calc(100vh - 100px);
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.tweet-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-user {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tweet-username {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.modal-info {
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #eee;
+  overflow-y: auto;
+}
+
+.modal-tweet-content {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-tweet-footer {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.modal-tweet-actions {
+  display: flex;
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+#modalComments {
+  margin-top: 15px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+}
+
+#modalCommentsList {
+  margin-top: 10px;
+}
+
+#modalCommentsList .comment {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#modalCommentsList .comment:last-child {
+  border-bottom: none;
+}
+
+#modalCommentsList .comment-user {
+  font-weight: bold;
+}
+
+#modalCommentsList .comment-text {
+  margin-top: 5px;
+}
+
+/* Media query refinements */
+@media (min-width: 768px) {
+  .modal-content-wrapper {
+    flex-direction: row;
+    width: 90%;
+    height: 80vh;
+  }
+  
+  .modal-content {
+    width: 65%;
+    max-height: 80vh;
+    padding: 0;
+  }
+  
+  .modal-info {
+    width: 35%;
+    max-height: 80vh;
+    border-top: none;
+    border-left: 1px solid #eee;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background-color 0.2s;
+}
+
+.close-modal:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Load More Button */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.load-more-btn {
+  background-color: #f5f8fa;
+  color: var(--primary-color);
+  border: 1px solid var(--light-gray);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #e8f5fe;
+  border-color: var(--primary-color);
+}

@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home | Mini Twitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    :root {
+      --card-transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --primary-gradient: linear-gradient(135deg, #1da1f2, #1a91da);
+      --primary-color-light: rgba(29, 161, 242, 0.1);
+      --border-color: #eff3f4;
+      --text-primary: #0f1419;
+      --text-secondary: #536471;
+      --background-light: #f7f9fa;
+    }
+    
+    body {
+      background-color: var(--background-light);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: white;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .logout-btn {
+      background-color: white;
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .logout-btn:hover {
+      background-color: var(--background-light);
+      color: #f4212e;
+      border-color: #f4212e;
+      transform: translateY(-2px);
+    }
+    
+    /* Main Container */
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      max-width: 1280px;
+      margin: 20px auto;
+      padding: 0 20px;
+      flex: 1;
+    }
+    
+    /* Sidebar Styles */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    .sidebar-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-color);
+      transition: var(--card-transition);
+    }
+    
+    .sidebar-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .sidebar-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+    
+    /* Profile Card */
+    .profile-card {
+      padding-bottom: 15px;
+    }
+    
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .profile-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    
+    .profile-name {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    
+    .profile-username {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    
+    .profile-stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 15px;
+    }
+    
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .stat-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    
+    .profile-bio {
+      background-color: var(--primary-color-light);
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    
+    /* Improved User List Styles */
+    .sidebar-card {
+      overflow: hidden; /* Ensure nothing spills out of the container */
+    }
+    
+    .user-list-container {
+      max-height: 380px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(29, 161, 242, 0.3) transparent;
+      padding: 0 5px; /* Add horizontal padding */
+      margin: 0 -5px; /* Offset the padding to preserve layout */
+      box-sizing: border-box;
+    }
+    
+    .user-list-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .user-list-container::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    .user-list-container::-webkit-scrollbar-thumb {
+      background-color: rgba(29, 161, 242, 0.3);
+      border-radius: 10px;
+    }
+    
+    .user-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+      animation: fadeIn 0.5s;
+      transition: background-color 0.2s;
+      gap: 10px; /* Ensure consistent spacing */
+      flex-wrap: nowrap; /* Prevent wrapping */
+    }
+    
+    .user-item:hover {
+      background-color: rgba(29, 161, 242, 0.05);
+    }
+    
+    .user-item:last-child {
+      border-bottom: none;
+    }
+    
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1;
+      overflow: hidden; /* Prevent overflow */
+    }
+    
+    .user-avatar {
+      width: 36px; /* Slightly smaller */
+      height: 36px; /* Slightly smaller */
+      border-radius: 50%;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    
+    .user-details {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      min-width: 0;
+      overflow: hidden; /* Ensure text doesn't spill out */
+    }
+    
+    .user-info .tweet-user {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .user-info .tweet-username {
+      font-size: 14px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .follow-btn {
+      background: var(--primary-gradient);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 6px 12px; /* Slightly reduced padding */
+      font-size: 13px; /* Slightly smaller font */
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      min-width: 72px; /* Slightly reduced min-width */
+      text-align: center;
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+    
+    .follow-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(29, 161, 242, 0.3);
+    }
+    
+    .follow-btn.following {
+      background: white;
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    
+    .follow-btn.following:hover {
+      background-color: #ffebe9;
+      color: #f4212e;
+      border-color: #f4212e;
+    }
+    
+    /* Features List */
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0;
+    }
+    
+    .features-list li {
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    
+    .features-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #1da1f2;
+      font-weight: bold;
+    }
+    
+    /* Debug Section */
+    .debug-section {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      border: 1px dashed #cfd9de;
+      display: none;
+    }
+    
+    .debug-btn {
+      background-color: #f2f2f2;
+      color: #555;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .debug-btn:hover {
+      background-color: #e9e9e9;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+      .main-container {
+        grid-template-columns: 1fr 2fr;
+      }
+      
+      /* Hide right sidebar on medium screens */
+      .sidebar.right {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+      
+      /* Stack sidebars on small screens */
+      .sidebar {
+        grid-row: 1;
+      }
+      
+      .sidebar.right {
+        display: none;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      width: 100%;
+      animation: fadeIn 0.5s ease-out;
+      animation-delay: 0.1s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+    
+    .tweet-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-color);
+      transition: var(--card-transition);
+    }
+    
+    /* Tweet Score Styles */
+    .tweet-score {
+      margin-left: auto;
+      background-color: #f8f9fa;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      color: #1da1f2;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .tweet-score:hover {
+      transform: scale(1.1);
+      background-color: #e8f5fd;
+    }
+    
+    /* Debug Table Styles */
+    .debug-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    
+    .debug-table th, .debug-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .debug-table th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+    
+    .debug-note {
+      font-size: 0.8rem;
+      color: #657786;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    .tweet-composer {
+      margin-bottom: 25px;
+    }
+    
+    .composer-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .composer-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 12px;
+    }
+    
+    .composer-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .tweet-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .tweet-textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 15px;
+      border: 2px solid var(--border-color);
+      border-radius: 16px;
+      font-size: 16px;
+      color: var(--text-primary);
+      margin-bottom: 15px;
+      transition: all 0.2s ease;
+      resize: vertical;
+      font-family: inherit;
+    }
+    
+    .tweet-textarea:focus {
+      outline: none;
+      border-color: #1da1f2;
+      box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.1);
+    }
+    
+    .tweet-form-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .tweet-form-upload {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .file-label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: white;
+      color: #1da1f2;
+      border: 1px solid #1da1f2;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .file-label:hover {
+      background-color: rgba(29, 161, 242, 0.1);
+    }
+    
+    .file-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    
+    .tweet-btn {
+      background: var(--primary-gradient);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .tweet-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+      background: linear-gradient(135deg, #1a91da, #0d8ecf);
+    }
+    
+    /* Feed Section */
+    .feed-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+    
+    .feed-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .feed-container {
+      min-height: 200px;
+    }
+    
+    .feed-empty {
+      padding: 30px;
+      text-align: center;
+      color: var(--text-secondary);
+      background-color: rgba(247, 249, 250, 0.6);
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    
+    .tweet {
+      background-color: white;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: all 0.25s ease;
+      animation: fadeIn 0.5s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .tweet:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      border-color: #d0e5f2;
+    }
+    
+    .tweet-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      position: relative;
+      width: 100%;
+    }
+    
+    .tweet-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+    
+    .tweet-user-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-width: 0;
+    }
+    
+    .tweet-user {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+    
+    .tweet-username {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    
+    .tweet-content {
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    
+    .tweet-image-container {
+      margin: 10px 0;
+      border-radius: 14px;
+      overflow: hidden;
+      max-height: 300px;
+      text-align: center;
+      background-color: #f8f9fa;
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      position: relative;
+    }
+    
+    .tweet-image-container:hover::after {
+      content: "View full image";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .tweet-image {
+      max-width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .tweet-image-container:hover .tweet-image {
+      transform: scale(1.03);
+    }
+    
+    .tweet-footer {
+      color: var(--text-secondary);
+      font-size: 13px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    /* Tweet Actions */
+    .tweet-actions {
+      display: flex;
+      margin-top: 15px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+    }
+    
+    .btn-action {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      padding: 8px 12px;
+      margin-right: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+      border-radius: 20px;
+    }
+    
+    .btn-action:hover {
+      background-color: rgba(29, 161, 242, 0.1);
+      color: #1da1f2;
+    }
+    
+    .btn-action.liked {
+      color: #e0245e;
+    }
+    
+    .btn-action.liked:hover {
+      background-color: rgba(224, 36, 94, 0.1);
+      color: #e0245e;
+    }
+    
+    /* View button hover effect */
+    .btn-action.viewed {
+      color: #1da1f2;
+    }
+    
+    .btn-action.viewed:hover {
+      background-color: rgba(29, 161, 242, 0.1);
+      color: #1da1f2;
+    }
+    
+    /* Loading */
+    .loading-spinner {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 3px solid rgba(29, 161, 242, 0.2);
+      border-top-color: #1da1f2;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 30px auto;
+    }
+    
+    /* Comments Section */
+    .comments-section {
+      margin-top: 15px;
+      padding: 15px;
+      border-top: 1px solid var(--border-color);
+      background-color: #f7f9fa;
+      border-radius: 0 0 14px 14px;
+      display: none;
+    }
+    
+    .comments-list {
+      margin-bottom: 15px;
+    }
+    
+    .comment {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .comment:last-child {
+      border-bottom: none;
+    }
+    
+    .comment-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    
+    .comment-header .tweet-user {
+      font-size: 14px;
+    }
+    
+    .comment-time {
+      color: var(--text-secondary);
+      font-size: 12px;
+      margin-left: auto;
+    }
+    
+    .comment-content {
+      font-size: 14px;
+      color: var(--text-primary);
+    }
+    
+    .comment-form {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .comment-input {
+      flex: 1;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      outline: none;
+    }
+    
+    .comment-input:focus {
+      border-color: #1da1f2;
+      box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.1);
+    }
+    
+    .comment-btn {
+      background-color: #1da1f2;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .comment-btn:hover {
+      background-color: #1a91da;
+    }
+    
+    /* Image Modal Styles */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .image-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .image-modal-content {
+      position: relative;
+      background-color: white;
+      width: 100%;
+      max-width: 1200px;
+      max-height: 90vh;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .image-modal-body {
+      display: flex;
+      height: 80vh;
+    }
+    
+    .image-modal-left {
+      flex: 1.5;
+      background-color: #000;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .image-modal-right {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: white;
+      border-left: 1px solid var(--border-color);
+    }
+    
+    #modalImage {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .image-modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background-color 0.2s;
+    }
+    
+    .image-modal-close:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .left-close {
+      left: 15px;
+      right: auto;
+      color: white;
+    }
+    
+    .modal-tweet-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    @media (max-width: 992px) {
+      .image-modal-body {
+        flex-direction: column;
+        height: auto;
+        max-height: 85vh;
+      }
+      
+      .image-modal-left {
+        height: 50vh;
+      }
+      
+      .image-modal-right {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+      }
+    }
+    .empty-list {
+      padding: 15px 0;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    /* Additional responsive adjustments */
+    @media (max-width: 1100px) {
+      .follow-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+        min-width: 65px;
+      }
+      
+      .user-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+      }
+      
+      .user-info .tweet-user {
+        font-size: 14px;
+      }
+      
+      .user-info .tweet-username {
+        font-size: 13px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .sidebar-card {
+        padding: 16px;
+      }
+      
+      .user-list-container {
+        max-height: 300px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .follow-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+        min-width: 70px;
+      }
+      
+      .user-avatar {
+        width: 34px;
+        height: 34px;
+      }
+    }
+    
+    /* Genre Checkboxes Styles */
+    .genre-checkboxes {
+      margin-bottom: 15px;
+    }
+    
+    .genre-label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    
+    .genre-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .genre-checkbox {
+      display: inline-flex;
+      align-items: center;
+      background-color: #f7f9fa;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .genre-checkbox:hover {
+      background-color: var(--primary-color-light);
+      border-color: #1da1f2;
+    }
+    
+    .genre-checkbox input {
+      margin-right: 5px;
+    }
+    
+    .genre-checkbox input:checked + span {
+      color: #1da1f2;
+      font-weight: 600;
+    }
+    
+    /* Media queries for genre checkboxes */
+    @media (max-width: 768px) {
+      .genre-options {
+        gap: 6px;
+      }
+      
+      .genre-checkbox {
+        padding: 4px 8px;
+        font-size: 13px;
+      }
+    }
+    
+    /* Tweet Genres Styles */
+    .tweet-genres {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0;
+    }
+    
+    .tweet-genre {
+      background-color: var(--primary-color-light);
+      color: #1da1f2;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Mini Twitter</div>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Left Sidebar - User Profile -->
+    <div class="sidebar left">
+      <!-- User Profile Card -->
+      <div class="sidebar-card profile-card">
+        <h3>Your Profile</h3>
+        <div id="profile-details">
+          <!-- Will be populated by JavaScript -->
+          <div class="profile-header">
+            <div class="profile-avatar">...</div>
+            <div class="profile-name">Loading...</div>
+            <div class="profile-username">@user</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Suggested Users Card -->
+      <div class="sidebar-card">
+        <h3>People You May Know</h3>
+        <div id="usersList" class="user-list-container">
+          <!-- Will be populated by JavaScript -->
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Tweet Composer -->
+      <div class="tweet-card tweet-composer">
+        <div class="composer-header">
+          <div class="composer-avatar" id="composer-avatar">T</div>
+          <div class="composer-title">Post a Tweet</div>
+        </div>
+        <form id="tweetForm" class="tweet-form" enctype="multipart/form-data">
+          <textarea name="text" class="tweet-textarea" placeholder="What's happening?" required></textarea>
+          
+          <div class="form-row">
+            <div class="genre-checkboxes">
+              <div class="genre-label">Select genres:</div>
+              <div class="genre-options">
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Tech">
+                  <span>Tech</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="News">
+                  <span>News</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Sports">
+                  <span>Sports</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Entertainment">
+                  <span>Entertainment</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Education">
+                  <span>Education</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Memes">
+                  <span>Memes</span>
+                </label>
+                <label class="genre-checkbox">
+                  <input type="checkbox" name="genres" value="Technology">
+                  <span>Technology</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tweet-form-actions">
+            <div class="tweet-form-upload">
+              <label for="image-upload" class="file-label">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM14.14 11.86L11.14 15.73L9 13.14L6 17H18L14.14 11.86Z" fill="currentColor"/>
+                </svg>
+                Add Image
+              </label>
+              <input type="file" id="image-upload" class="file-input" name="image" accept="image/*">
+            </div>
+            <button type="submit" class="tweet-btn">Tweet</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Feed Section -->
+      <div class="feed-section">
+        <div class="feed-header">
+          <h3 class="feed-title">Your Feed</h3>
+        </div>
+        <div id="feed" class="feed-container">
+          <!-- Will be populated by JavaScript -->
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Sidebar -->
+    <div class="sidebar right">
+      <!-- Trending Card -->
+      <div class="sidebar-card">
+        <h3>About Mini Twitter</h3>
+        <p>This is a fully offline app. Your data is stored locally in JSON files.</p>
+        <ul class="features-list">
+          <li>Heap-based feed sorting</li>
+          <li>HashMap for fast user lookup</li>
+          <li>Image upload support</li>
+          <li>Follow/unfollow users</li>
+          <li>Like and comment on posts</li>
+        </ul>
+      </div>
+      
+      <!-- Debug Section -->
+      <div id="debug-section" class="debug-section">
+        <h3>Debug Tools</h3>
+        <button onclick="testImageLoading()" class="debug-btn">🔍 Test Image Loading</button>
+        <button onclick="testDirectImageEndpoint()" class="debug-btn">🔗 Test Direct Image Endpoint</button>
+        <div id="debug-results" class="mt-20"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add debug modal for scoring factors -->
+  <div id="debugModal" class="modal debug-modal">
+    <span class="close-modal">&times;</span>
+    <div class="debug-content" id="debugContent"></div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal" onclick="closeImageModal()">&times;</span>
+    <div class="modal-content-wrapper">
+      <img class="modal-content" id="modalImage">
+      <div class="modal-info">
+        <div class="modal-tweet-header">
+          <div class="tweet-user-info">
+            <span id="modalName" class="tweet-user"></span>
+            <span id="modalUsername" class="tweet-username"></span>
+          </div>
+        </div>
+        <div id="modalTweetContent" class="modal-tweet-content"></div>
+        <div class="modal-tweet-footer">
+          <span id="modalTimestamp"></span>
+        </div>
+        <div class="modal-tweet-actions">
+          <button id="modalLikeBtn" class="btn-action">
+            🤍 <span id="modalLikeCount">0</span>
+          </button>
+          <button id="modalCommentBtn" class="btn-action">
+            💬 <span id="modalCommentCount">0</span>
+          </button>
+        </div>
+        <div id="modalComments" style="display: none;">
+          <div id="modalCommentsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script>
+    function logout() {
+      localStorage.removeItem('userId');
+      window.location.href = '/';
+    }
+    
+    // Display profile details
+    async function loadProfile() {
+      const userId = localStorage.getItem('userId');
+      const response = await fetch('/users');
+      const users = await response.json();
+      const currentUser = users.find(u => u.id === userId);
+      
+      if (currentUser) {
+        const profileDiv = document.getElementById('profile-details');
+        const firstLetter = currentUser.name.charAt(0).toUpperCase();
+        
+        // Update composer avatar
+        const composerAvatar = document.getElementById('composer-avatar');
+        if (composerAvatar) {
+          composerAvatar.textContent = firstLetter;
+        }
+        
+        profileDiv.innerHTML = `
+          <div class="profile-header">
+            <div class="profile-avatar">${firstLetter}</div>
+            <div class="profile-name">${currentUser.name}</div>
+            <div class="profile-username">@${currentUser.username}</div>
+          </div>
+          <div class="profile-stats">
+            <div class="stat-item">
+              <div class="stat-value">${currentUser.following ? currentUser.following.length : 0}</div>
+              <div class="stat-label">Following</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">${currentUser.genre || '-'}</div>
+              <div class="stat-label">Interest</div>
+            </div>
+          </div>
+        `;
+      }
+    }
+    
+    // Enable debug mode with triple click on logo
+    document.querySelector('.logo').addEventListener('click', function() {
+      if (!window.clickCount) window.clickCount = 0;
+      window.clickCount++;
+      
+      if (window.clickCount >= 3) {
+        document.getElementById('debug-section').style.display = 'block';
+        window.clickCount = 0;
+      }
+    });
+    
+    // Open image modal
+    function openImageModal(postId) {
+      const modal = document.getElementById('imageModal');
+      const post = window.currentPosts.find(p => p.id === postId);
+      
+      if (post) {
+        const user = newsFeed.userMap.get(post.userId);
+        const isLiked = post.likes && post.likes.includes(newsFeed.currentUserId);
+        const likeCount = post.likes ? post.likes.length : 0;
+        const commentCount = post.comments ? post.comments.length : 0;
+        
+        // Set image src with fallbacks
+        const modalImage = document.getElementById('modalImage');
+        const filename = post.image.split('/').pop();
+        modalImage.src = post.image;
+        modalImage.onerror = function() {
+          if (!this.dataset.attempt) {
+            this.dataset.attempt = '1';
+            this.src = '/image-uploads/' + filename;
+          } 
+          else if (this.dataset.attempt === '1') {
+            this.dataset.attempt = '2';
+            this.src = '/uploads/' + filename;
+          }
+          else if (this.dataset.attempt === '2') {
+            this.dataset.attempt = '3';
+            this.src = '/get-image/' + filename;
+          }
+        };
+        
+        // Set tweet metadata
+        document.getElementById('modalUsername').textContent = '@' + user.username;
+        document.getElementById('modalName').textContent = user.name;
+        document.getElementById('modalTweetContent').textContent = post.text;
+        document.getElementById('modalTimestamp').textContent = new Date(post.timestamp).toLocaleString();
+        
+        // Set like button
+        const likeBtn = document.getElementById('modalLikeBtn');
+        likeBtn.className = `btn-action ${isLiked ? 'liked' : ''}`;
+        likeBtn.innerHTML = `${isLiked ? '❤️' : '🤍'} <span id="modalLikeCount">${likeCount || 0}</span>`;
+        likeBtn.onclick = function() {
+          newsFeed.toggleLike(post.id);
+          closeImageModal(); // Close and re-open to refresh data
+          setTimeout(() => openImageModal(post.id), 500);
+        };
+        
+        // Set comments
+        document.getElementById('modalCommentCount').textContent = commentCount || 0;
+        
+        // Comments section
+        const modalComments = document.getElementById('modalComments');
+        document.getElementById('modalCommentBtn').onclick = function() {
+          modalComments.style.display = modalComments.style.display === 'none' ? 'block' : 'none';
+        };
+        
+        // Show comments by default if there are any
+        if (post.comments && post.comments.length > 0) {
+          modalComments.style.display = 'block';
+        } else {
+          modalComments.style.display = 'none';
+        }
+        
+        // Populate comments
+        document.getElementById('modalCommentsList').innerHTML = newsFeed.renderComments(post.comments || []);
+        
+        modal.style.display = 'flex';
+      }
+    }
+    
+    // Close image modal
+    function closeImageModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside of it
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById('imageModal');
+      if (event.target === modal) {
+        closeImageModal();
+      }
+    });
+    
+    // File input visual feedback
+    document.getElementById('image-upload').addEventListener('change', function(e) {
+      const fileName = e.target.files[0] ? e.target.files[0].name : 'No file selected';
+      const fileLabel = document.querySelector('.file-label');
+      
+      if (e.target.files[0]) {
+        fileLabel.innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+          </svg>
+          ${fileName.length > 15 ? fileName.substring(0, 15) + '...' : fileName}
+        `;
+        fileLabel.style.backgroundColor = 'rgba(29, 161, 242, 0.1)';
+      } else {
+        fileLabel.innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM14.14 11.86L11.14 15.73L9 13.14L6 17H18L14.14 11.86Z" fill="currentColor"/>
+          </svg>
+          Add Image
+        `;
+        fileLabel.style.backgroundColor = '';
+      }
+    });
+    
+    // Form submit loading state
+    document.getElementById('tweetForm').addEventListener('submit', function() {
+      const submitBtn = this.querySelector('button[type="submit"]');
+      submitBtn.innerHTML = `
+        <div class="loading-spinner" style="width: 18px; height: 18px; margin: 0;"></div>
+      `;
+      submitBtn.disabled = true;
+    });
+    
+    // Test image loading for debugging
+    async function testImageLoading() {
+      const debugResults = document.getElementById('debug-results');
+      debugResults.innerHTML = '<p>Testing image loading...</p>';
+      
+      try {
+        // Get the posts to find image paths
+        const userId = localStorage.getItem('userId');
+        const response = await fetch(`/feed?userId=${userId}`);
+        const feed = await response.json();
+        
+        const imagePosts = feed.filter(post => post.image);
+        
+        if (imagePosts.length === 0) {
+          debugResults.innerHTML = '<p>No posts with images found.</p>';
+          return;
+        }
+        
+        const results = [];
+        
+        for (const post of imagePosts) {
+          const imagePath = post.image;
+          const imageName = imagePath.split('/').pop();
+          
+          // Test each path
+          const paths = [
+            imagePath,
+            `/data${imagePath}`,
+            `/uploads/${imageName}`,
+            `/data/uploads/${imageName}`
+          ];
+          
+          // Check server debug endpoint
+          const debugResponse = await fetch(`/debug/image-path?path=${encodeURIComponent(imagePath)}`);
+          const debugInfo = await debugResponse.json();
+          
+          results.push(`
+            <div class="debug-item">
+              <h4>Image: ${imageName}</h4>
+              <p>Original path: ${imagePath}</p>
+              <p>Exists on server: ${debugInfo.exists ? 'Yes' : 'No'}</p>
+              <p>Server path: ${debugInfo.absolutePath}</p>
+              <div class="debug-images">
+                ${paths.map((path, i) => `
+                  <div>
+                    <p>Path ${i+1}: ${path}</p>
+                    <img 
+                      src="${path}" 
+                      alt="Test ${i+1}" 
+                      style="max-width: 100px; max-height: 100px; border: 1px solid #ccc;"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    >
+                    <p style="display: none; color: red;">Failed to load</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `);
+        }
+        
+        debugResults.innerHTML = results.join('<hr>');
+        
+      } catch (error) {
+        debugResults.innerHTML = `<p>Error: ${error.message}</p>`;
+      }
+    }
+    
+    // Test direct image endpoint
+    async function testDirectImageEndpoint() {
+      const debugResults = document.getElementById('debug-results');
+      debugResults.innerHTML = '<p>Testing direct image endpoint...</p>';
+      
+      try {
+        // Get the posts to find image paths
+        const userId = localStorage.getItem('userId');
+        const response = await fetch(`/feed?userId=${userId}`);
+        const feed = await response.json();
+        
+        const imagePosts = feed.filter(post => post.image);
+        
+        if (imagePosts.length === 0) {
+          debugResults.innerHTML = '<p>No posts with images found.</p>';
+          return;
+        }
+        
+        const results = [];
+        
+        for (const post of imagePosts) {
+          const imagePath = post.image;
+          const imageTimestamp = imagePath.split('/').pop().split('-')[0];
+          
+          results.push(`
+            <div class="debug-item">
+              <h4>Testing Direct Image Endpoint</h4>
+              <p>Original path: ${imagePath}</p>
+              <p>Image timestamp: ${imageTimestamp}</p>
+              <div>
+                <p>Direct endpoint test:</p>
+                <img 
+                  src="/image/${imageTimestamp}" 
+                  alt="Direct endpoint test" 
+                  style="max-width: 200px; max-height: 200px; border: 1px solid #ccc;"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <p style="display: none; color: red;">Failed to load from direct endpoint</p>
+              </div>
+            </div>
+          `);
+        }
+        
+        debugResults.innerHTML = results.join('<hr>');
+        
+      } catch (error) {
+        debugResults.innerHTML = `<p>Error: ${error.message}</p>`;
+      }
+    }
+    
+    // Override the main.js renderFeed function to use our new styling
+    window.addEventListener('DOMContentLoaded', function() {
+      loadProfile();
+      
+      // Override the renderUserList method when it's available
+      if (window.NewsFeed && window.NewsFeed.prototype) {
+        const originalRenderUserList = window.NewsFeed.prototype.renderUserList;
+        
+        window.NewsFeed.prototype.renderUserList = async function() {
+          const users = await this.loadUsers();
+          const list = document.getElementById('usersList');
+          if (!list) return;
+          
+          list.innerHTML = '';
+          
+          const currentUser = this.userMap.get(this.currentUserId);
+          
+          if (users.filter(u => u.id !== this.currentUserId).length === 0) {
+            list.innerHTML = '<p class="empty-list">No suggested users found.</p>';
+            return;
+          }
+          
+          users
+            .filter(u => u.id !== this.currentUserId)
+            .forEach(user => {
+              const isFollowing = currentUser.following && currentUser.following.includes(user.id);
+              const btnText = isFollowing ? 'Unfollow' : 'Follow';
+              const firstLetter = user.name.charAt(0).toUpperCase();
+              
+              // Truncate long usernames/names for display
+              const displayName = user.name.length > 15 ? user.name.substring(0, 15) + '...' : user.name;
+              const displayUsername = user.username.length > 15 ? user.username.substring(0, 15) + '...' : user.username;
+              
+              const div = document.createElement('div');
+              div.className = 'user-item';
+              div.innerHTML = `
+                <div class="user-details">
+                  <div class="user-avatar">${firstLetter}</div>
+                  <div class="user-info">
+                    <div class="tweet-user" title="${user.name}">${displayName}</div>
+                    <div class="tweet-username" title="@${user.username}">@${displayUsername}</div>
+                  </div>
+                </div>
+                <button class="follow-btn ${isFollowing ? 'following' : ''}" 
+                        onclick="newsFeed.toggleFollow('${user.id}', ${isFollowing})">
+                  ${btnText}
+                </button>
+              `;
+              list.appendChild(div);
+            });
+        };
+      }
+      
+      // Override the renderFeed method when it's available
+      const originalInit = window.NewsFeed && window.NewsFeed.prototype.init;
+      if (originalInit) {
+        window.NewsFeed.prototype.renderFeed = async function() {
+          const feed = await this.loadFeed();
+          const feedDiv = document.getElementById('feed');
+          if (!feedDiv) return;
+          
+          feedDiv.innerHTML = ''; // clear old content
+          
+          if (feed.length === 0) {
+            feedDiv.innerHTML = `
+              <div class="feed-empty">
+                <p>No tweets to display.</p>
+                <p>Follow users or post something!</p>
+              </div>
+            `;
+            return;
+          }
+
+          feed.forEach((post, index) => {
+            const user = this.userMap.get(post.userId);
+            const div = document.createElement('div');
+            div.className = 'tweet';
+            div.style.animationDelay = `${index * 0.1}s`;
+            
+            // Check if current user has liked this post
+            const isLiked = post.likes && post.likes.includes(this.currentUserId);
+            const likeCount = post.likes ? post.likes.length : 0;
+            const commentCount = post.comments ? post.comments.length : 0;
+            
+            // Get user's first letter for avatar
+            const firstLetter = user.name.charAt(0).toUpperCase();
+            
+            // Create tweet HTML
+            let tweetHTML = `
+              <div class="tweet-header">
+                <div class="tweet-avatar">${firstLetter}</div>
+                <div class="tweet-user-info">
+                  <span class="tweet-user">${user.name}</span>
+                  <span class="tweet-username">@${user.username}</span>
+                </div>
+                <span class="tweet-score" title="Click to see scoring factors" onclick="newsFeed.showScoringFactors('${post.id}')">🔥 ${post.score ? post.score.toFixed(1) : ''}</span>
+              </div>
+              <div class="tweet-content">${post.text}</div>
+            `;
+            
+            // Add image if available
+            if (post.image) {
+              tweetHTML += `
+                <div class="tweet-image-container" onclick="openImageModal('${post.id}')">
+                  <img 
+                    src="${post.image}" 
+                    alt="Tweet image" 
+                    class="tweet-image"
+                    onerror="if(!this.dataset.attempt){this.dataset.attempt='1';this.src='/image-uploads/${post.image.split('/').pop()}'} else if(this.dataset.attempt==='1'){this.dataset.attempt='2';this.src='/uploads/${post.image.split('/').pop()}'}"
+                  >
+                </div>
+              `;
+            }
+            
+            // Add timestamp and actions
+            tweetHTML += `
+              <div class="tweet-footer">
+                <span>${new Date(post.timestamp).toLocaleString()}</span>
+              </div>
+              <div class="tweet-actions">
+                <button class="btn-action ${isLiked ? 'liked' : ''}" onclick="newsFeed.toggleLike('${post.id}')">
+                  ${isLiked ? '❤️' : '🤍'} <span>${likeCount || 0}</span>
+                </button>
+                <button class="btn-action" onclick="newsFeed.toggleComments('${post.id}')">
+                  💬 <span>${commentCount || 0}</span>
+                </button>
+              </div>
+            `;
+            
+            // Add comments section if there are comments
+            if (post.comments && post.comments.length > 0) {
+              tweetHTML += `
+                <div id="comments-${post.id}" class="comments-section" style="display: none;">
+                  <div class="comments-list">
+                    ${this.renderComments(post.comments)}
+                  </div>
+                  <div class="comment-form">
+                    <input type="text" id="comment-input-${post.id}" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="newsFeed.addComment('${post.id}')" class="comment-btn">Post</button>
+                  </div>
+                </div>
+              `;
+            } else {
+              tweetHTML += `
+                <div id="comments-${post.id}" class="comments-section" style="display: none;">
+                  <div class="comments-list">
+                    <p>No comments yet.</p>
+                  </div>
+                  <div class="comment-form">
+                    <input type="text" id="comment-input-${post.id}" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="newsFeed.addComment('${post.id}')" class="comment-btn">Post</button>
+                  </div>
+                </div>
+              `;
+            }
+            
+            div.innerHTML = tweetHTML;
+            feedDiv.appendChild(div);
+          });
+        };
+
+        // Call init to make sure it runs with our overrides
+        setTimeout(() => {
+          if (window.newsFeed && window.newsFeed.init) {
+            window.newsFeed.init();
+            
+            // Ensure user list is rendered with our custom method
+            if (window.newsFeed.renderUserList) {
+              window.newsFeed.renderUserList();
+            }
+          }
+        }, 100);
+      }
+    });
+  </script>
+  
+  <!-- Debug Modal for Scoring Factors -->
+  <div id="debugModal" class="modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4);">
+    <div class="debug-content" style="background-color: white; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);">
+      <span class="close-modal" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+      <div id="debugContent"></div>
+    </div>
+  </div>
+  
+  <script>
+    // Debug Modal Close Functionality
+    document.querySelector('#debugModal .close-modal').addEventListener('click', function() {
+      document.getElementById('debugModal').style.display = 'none';
+    });
+    
+    // Close when clicking outside the content
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById('debugModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
